@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../core.css">
+    <link rel="stylesheet" href="../../css/code-viewer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Ninja - View</title>
+    <meta name="description" content="View the code of Desafio Ninja project">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../index.html">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" class="navbar__button">
+                    HOME</a></li>
+            <li><a href="../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button active">PROJETOS<div class="material-icons dd-arrow">south
+                    </div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../my_projects/index.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../learn/web_dev/web-dev-topic.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="../learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <h1 class="primary-title">Visualizador Do Código - Desafio Ninja</h1>
+        <div class="code-viewer">
+            <div class="code-viewer__tabs">
+                <button class="code-viewer__tab code-viewer__tab--active" data-id="view-html">HTML</button>
+                <button class="code-viewer__tab" data-id="view-css">CSS</button>
+                <button class="code-viewer__tab" data-id="view-js">JS</button>
+            </div>
+            <div class="code-viewer__code">
+                <div class="code-viewer__content code-viewer__content--active" id="view-html">
+                    <pre>
+                        <code>
+<!-- code Desafio Ninja-->
+&lt;html lang=&quot;pt-br&quot;&gt;
+    &lt;head&gt;
+        &lt;title&gt; Desafio Ninja Pedro Rossi &lt;/title&gt;
+        &lt;Link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./css's/style_05.css&quot;&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Pedro Rossi&quot;&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;JS_03&quot;&gt; 
+        &lt;meta name=&quot;keywords&quot; content=&quot;desenvolvimento web, html, JavaScript&quot;&gt;
+    &lt;/head&gt;
+
+    &lt;body onload=&quot;um()&quot; onkeypress=&quot;swc()&quot;&gt;
+        &lt;header class=&quot;mm&quot;&gt;
+            &lt;main&gt; 
+            &lt;!--------------------------------header-----------------------------------&gt;
+                &lt;div class=&quot;hdr&quot;&gt;
+                    &lt;div class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;./img/logo.png&quot;&gt; &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;!-----------------------sm-------------------------&gt;
+                    &lt;div class=&quot;sm&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;https://pt-br.facebook.com/&quot; target=&quot;_blank&quot;&gt;
+                                    &lt;img src=&quot;./img/face.png&quot;&gt; 
+                                &lt;/a&gt; 
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;https://www.instagram.com/&quot; target=&quot;_blank&quot;&gt;
+                                    &lt;img src=&quot;./img/insta.png&quot;&gt; 
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt; 
+                                &lt;a href=&quot;https://youtu.be/dQw4w9WgXcQ&quot; target=&quot;_blank&quot;&gt;
+                                    &lt;img src=&quot;./img/ytb.png&quot;&gt; 
+                                &lt;/a&gt; 
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt; 
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/header&gt;
+        
+        &lt;!------------------------------- t&iacute;tulo da p&aacute;g ---------------------------------------&gt;
+        &lt;div id=&quot;box&quot;&gt;                    
+            &lt;p&gt;
+                &lt;u&gt;&lt;h1&gt; Os Jogos Mais Vendidos da Hist&oacute;ria &lt;/h1&gt;&lt;/u&gt;
+            &lt;/p&gt;&lt;br&gt;
+            
+            &lt;center&gt;&lt;sub&gt; Pressione Enter/Return &lt;/sub&gt;&lt;/center&gt;
+            &lt;br&gt; &lt;br&gt; 
+
+            &lt;!-------------------------- chamando o JS ------------------------------&gt;
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt; 
+            
+            &lt;!-------------------------------card---------------------------------------&gt;
+            &lt;div class=&quot;crd&quot;&gt;
+                &lt;div class=&quot;crd00&quot;&gt;
+                    &lt;div class=&quot;crd0.0&quot; style=&quot;width: 60%;&quot;&gt;
+                        &lt;img id =&quot;img&quot; style=&quot;width: 167%;&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt; &lt;br&gt;
+                &lt;center&gt;&lt;h2 id=&quot;ttl&quot;&gt; &lt;/h2&gt;&lt;/center&gt;
+                &lt;p id=&quot;txt&quot;&gt;&lt;/p&gt;
+                &lt;p id=&quot;txt0&quot;&gt;&lt;/p&gt;
+                &lt;p id=&quot;txt1&quot;&gt;&lt;/p&gt;&lt;br&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;!--------------------------footter-------------------------------&gt;
+        &lt;div class=&quot;ftr&quot;&gt;
+            &lt;p&gt; &lt;a href=&quot;index.html&quot;&gt; &lt;u&gt; &lt;b&gt;By Pedro Rossi - 10/09/2020&lt;/b&gt;&lt;/u&gt; &lt;/a&gt; &lt;/p&gt; 
+        &lt;/div&gt; 
+    &lt;/body&gt; 
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                    <span class="txt">O código é muito grande. <a href="../my_projects/web_langs/websites/DesafioNinja/index.html">Clique aqui</a> para ver no seu navegador</span> 
+                </div>
+                <div class="code-viewer__content" id="view-css">
+                    <pre>
+                        <code>
+    .mm{
+        width: 100%;
+        background-color: darkblue;
+        height: 128px;
+    }
+
+    main{
+        margin: 0;
+        position: relative;
+    }
+
+    .logo{
+        width: 10%;
+        float: left;
+    }
+
+    .sm ul li{
+        display: inline-block;
+        float: right;
+        list-style: none;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    #box{
+        box-shadow: 0 2px 5px darkcyan;
+        padding: 10px;
+        border: 2px darkblue;
+        text-align: center;
+    }
+
+    h1{
+        color: darkcyan;
+        font-family: fantasy;
+    }
+
+    .crd{
+        display: flex;
+    }
+
+    .crd00{
+        margin: 0 auto;
+        width: 20%;
+        float: center; 
+        box-shadow: 0px 1px 1px 2px darkcyan;
+        transition: 0.3s;
+    }
+
+    #ttl{
+        text-align: center;
+        color: darkblue;
+        font-family: 'Lucida Sans Unicode';
+        font-size: large;
+    }
+
+    #txt{
+        font-family: Georgia;
+        text-align: justify;
+    }
+
+    #txt0{
+        font-family: Georgia;
+        text-align: justify;
+    }
+
+    #txt1{
+        font-family: Georgia;
+        text-align: justify;
+    }
+
+    .ftr{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: darkblue;
+        text-align: center;
+    }
+
+    .ftr a{
+        color: darkcyan;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 18px;
+        border-radius: 2px;
+    }
+
+    .ftr a:hover{
+        color: darkgray;
+    }         
+                        </code>
+                    </pre>
+                </div>
+                <div class="code-viewer__content" id="view-js">
+                    <span>
+                        O código é muito grande. <a href="../my_projects/web_langs/websites/DesafioNinja/script.js">Clique aqui</a> para visualizar o código no seu navegador.
+                    </span><br>
+                    <span class="txt--small">Para voltar clique na seta ao lado do seu computador</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="../my_projects/web_langs/web-langs-projects.html" class="material-icons return">navigate_before</a>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../main.js"></script>
+    <script src="../../js/codeViewer.js"></script>
+</body>
+
+</html>

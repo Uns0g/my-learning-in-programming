@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="./core.css">
+    <link rel="stylesheet" href="./css/my_projects/web-langs.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP - </title>
+    <meta name="description" content="***">
+    <meta name="author" content="***">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="./img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="./img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html" class="navbar__button">
+                    HOME</a></li>
+            <li><a href="./courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button active">PROJETOS<div class="material-icons dd-arrow">south
+                    </div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="#">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="./learn/web_dev/web-dev-topic.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="./learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="./learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="./learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <h1 class="primary-title"></h1>
+        <p class="txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem dolorem nobis harum natus rerum id
+            accusamus, dignissimos veritatis voluptatum nam, consectetur fugiat error ipsam necessitatibus? Animi
+            voluptatibus dolorem ipsa.
+        </p>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

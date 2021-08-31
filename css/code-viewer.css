@@ -1,0 +1,104 @@
+body{
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "title title title"
+    "codeViewer codeViewer codeViewer"
+    "footer footer footer";
+    grid-template-columns: [col-l] 0.25fr [col-c1] 0.40fr [col-c2] 0.35fr [col-r];
+}
+
+.page-container{
+    grid-column: col-l / col-r;
+}
+
+.primary-title{
+    grid-area: title;
+    margin-bottom: 40px;
+}
+
+.code-viewer{
+    display: flex;
+    flex-direction: column;
+    grid-area: codeViewer;
+    width: 85%;
+    margin: auto;
+}
+
+/*-------- tabs -------*/
+.code-viewer__tabs{
+    top: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.code-viewer__tab{
+    padding: 4px 16px;
+    background-color: var(--dark);
+    color: var(--darker);
+    font-size: 1.5rem;
+    border: 2px solid var(--darker);
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0.6;
+}
+
+.code-viewer__tab--active{
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 1.8rem;
+    border-style: outset;
+    border-bottom: none;
+    opacity: 1;
+}
+
+/*------- code-viewer__content -------*/
+.code-viewer__content{
+    display: none;
+}
+
+.code-viewer__content--active{
+    display: block;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    background-color: var(--light);
+    transition: all var(--long-transition);
+}
+
+span.txt{
+    display: none;
+}
+
+#view-js{
+    height: 300px;
+}
+
+/*------ return -----*/
+.return{
+    cursor: pointer;
+    padding: 9px;
+    margin-top: 30px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+@media screen and (max-width: 1024px){.code-viewer{width: 90%;}}
+@media screen and (max-width: 800px){
+    .code-viewer{width: 98%;}
+    #view-html pre{
+        height: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    #view-html span.txt{display: block;}
+}
+
+@media screen and (max-width: 420px){
+    #view-css pre{
+        height: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    #view-css span.txt{display: block;}
+}

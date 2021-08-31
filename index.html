@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP - Home</title>
+    <meta name="description" content="Homepage of MLP - My Learning On Programming website">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="./img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="./img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active navbar__button">HOME</a></li>
+            <li><a href="./html/courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a
+                            href="./html/my_projects/web_langs/web-langs-projects.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="./html/learn/web_dev/web-dev-topic.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="./html/learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="./html/learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="./html/learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <section id="presentation">
+            <h1 class="primary-title">APRESENTAÇÃO</h1>
+            <div class="profile-pic shadow-active">
+                <img src="img/gp.png" alt="A picture of the author and developer of the website">
+            </div>
+            <p class="txt">
+                Por enquanto sou um desenvolvedor Front-End, mas eu sou realmente um programador-explorador, exploro
+                <span class="txt--darker">todo este mundo</span> em busca de criar projetos úteis para as pessoas,
+                começando na identificação e entendimento dos seus problemas e só depois construindo um programa para
+                solucioná-lo, porque uma profissão não é sobre a prática dela, mas os benefícios gerados pela prática,
+                em suma, eu não programo, mas soluciono problemas.
+            </p>
+            <p class="txt">
+                Neste site você encontrará vários projetos de todos os tipos, utilizando as mais variadas ferramentas
+                nas mais diversas linguagens, vai ver realmente o que é explorar o mundo da programação e saber quem eu
+                sou e o que faço, além de, se quiser, olhar como eu ensino para um outro enquanto eu aprendo algum
+                tópico de programação.
+            </p>
+        </section>
+        <section class="resume shadow-active">
+            <div class="resume-header">
+                <div class="resume-header__section-left">
+                    <h1 class="resume-header__title">Pedro Rossi</h1>
+                    <div class="resume-header__pic"><a href="http://github.com/Uns0g" target="_blank"
+                            rel="noopener noreferrer"><img src="img/gp.png" alt="picture from the website author"></a>
+                    </div>
+                    <span class="resume-header__position">Desenvolvedor Web Front-End</span>
+                </div>
+                <div class="resume-header__section-right">
+                    <h2>Contatos</h2>
+                    <div class="resume-header__item">
+                        <div class="resume-header__social-media-icon">
+                            <img src="img/interface/gh-icon.svg" alt="sm-icon">
+                        </div>
+                        <a href="https://github.com/Uns0g" target="_blank">Uns0g</a>
+                    </div>
+                    <div class="resume-header__item">
+                        <div class="resume-header__social-media-icon">
+                            <img src="img/interface/linkedin-icon.svg" alt="sm-icon">
+                        </div>
+                        <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank">Pedro Rossi</a>
+                    </div>
+                    <div class="resume-header__item">
+                        <div class="material-icons">
+                            phone_in_talk
+                        </div>
+                        <span>+55 (16) 99630-8580</span>
+                    </div>
+                    <div class="resume-header__item">
+                        <span class="material-icons">
+                            mail
+                        </span>
+                        <a href="mailto:pedrorossicom@outlook.com" target="_blank">PedroRossiCom@Outlook.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-body">
+                <div class="resume-body__section-left">
+                    <h3 class="resume-body__title">Perfil</h3>
+                    <p class="resume-body__text">
+                        Sou desenvolvedor web front-end e atualmente curso ensino técnico em Desenvolvimento de Sistemas
+                        e estou me aprofundando em JavaScript.
+                    </p>
+                    <p class="resume-body__text">
+                        Procuro atender a demanda do cliente primeiramente e ajudar na organização e agilidade da
+                        resolução de problemas na equipe, para não só atender a demanda mas entregar o melhor serviço.
+                    </p>
+                    <h3 class="resume-body__title">Soft Skills</h3>
+                    <span class="resume-body__skills-title">(Criatividade, Proatividade)</span>
+                    <p class="resume-body__skills-body">
+                        A coisa mais divertida da programação é o despertar de um espírito criativo que é escondido de
+                        todos nós desde a infância, uma predisposição que todos têm para conectar conceitos, identificar
+                        padrões e procurar criar alguma solução para o problema que enfrenta, é impossível fazer isso
+                        sem "ir lá e encarar" bater de frente com o problema e enfrentá-lo.
+                    </p>
+                    <p class="resume-body__skills-body">
+                        O que é mais procurado hoje em programação é a tal da "inovação" e a <span
+                            class="txt--darker">vontade</span> de oferecer não só soluções para o problema, mas <span
+                            class="txt--darker">a melhor</span> solução para o problema. É exatamente isso que eu
+                        ofereço.
+                    </p>
+                    <h3 class="resume-body__title">Idiomas</h3>
+                    <span class="resume-body__skills-title">English</span>
+                    <div class="resume-body__skills-measure">
+                        <div class="level level--painted" data-value="Begginer"></div>
+                        <div class="level level--painted" data-value="Elementary"></div>
+                        <div class="level level--painted" data-value="Intermediate"></div>
+                        <div class="level level--painted" data-value="Upper Intermediate"></div>
+                        <div class="level" data-value="Advanced"></div>
+                        <div class="level" data-value="Proficient"></div>
+                    </div>
+                    <div id="english-proficiency"></div>
+                    <span class="resume-body__skills-title">Português</span>
+                    <p class="resume-body__text txt--big">Nativo</p>
+                </div>
+                <div class="resume-body__section-right">
+                    <h3 class="resume-body__title">Educação</h3>
+                    <span class="resume-body__skills-title">Ensino Técnico Em Desenvolvimento De Sistemas</span> -
+                    <em>(2020-2022)</em>
+                    <p class="resume-body__skills-body">
+                        O objetivo desse curso é fornecer ao aluno uma formação técnica em desenvolvimento de sistemas,
+                        abordando todos os aspectos dele, passando por desenvolvimento Web, desenvolvimento Mobile,
+                        desenvolvimento Desktop, segurança, protocolos da internet, Método Ágil, Método Cascata, banco
+                        de dados relacionais e etc
+                    </p>
+                    <h3 class="resume-body__title">Resultados</h3>
+                    <p class="resume-body__text">
+                        Se quer ver o que fiz, deixarei abaixo os projetos que fiz, separados por categorias que, por
+                        sua vez, foram separadas em projetos simples, medianos e complexos.
+                    </p>
+                    <ul>
+                        <li><a href="./html/my_projects/web_langs/web-langs-projects.html/#simple">Desenvolvimento Web -
+                                Simples</a></li>
+                        <li><a href="./html/my_projects/web_langs/web-langs-projects.html/#median">Desenvolvimento Web -
+                                Medianos</a></li>
+                        <li><a href="./html/my_projects/web_langs/web-langs-projects.html/#complex">Desenvolvimento Web
+                                - Complexos</a></li>
+                    </ul>
+                    <p class="resume-body__text">
+                        Os projetos simples estão no nível de domínio ou mais elementar, ou básico, os medianos estão ou
+                        no nível intermediário ou no profissional, os complexos estão no nível de domínio. <span
+                            class="txt--small">Os níveis estão presentes no conteúdo abaixo</span>
+                    </p>
+                    <h3 class="resume-body__title">Hard Skills</h3>
+                    <span class="resume-body__skills-title">HTML & CSS & JS</span>
+                    <div class="resume-body__skills-measure">
+                        <div class="level level--painted" data-value="Know The Concepts"></div>
+                        <div class="level level--painted" data-value="Basic"></div>
+                        <div class="level level--painted" data-value="Intermediate"></div>
+                        <div class="level" data-value="Professional"></div>
+                        <div class="level" data-value="Master"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="aside-right">
+        <div id="tab-card-container">
+            <a href="./html/courses/index.html" class="removal">
+                <div class="tab-card">
+                    <span class="tab-card__title secondary-title">CURSOS</span>
+                    <span class="tab-card__description txt txt--darker">Clique aqui para entrar na aba CURSOS, onde você
+                        encontrará todos os cursos que eu fiz e, futuramente adicionarei, todos os cursos que estou
+                        fazendo. Cada curso tem seu índice de tópicos abordados e projetos que fiz durante ele.</span>
+                </div>
+            </a>
+            <a href="./html/my_projects/index.html" class="removal">
+                <div class="tab-card">
+                    <span class="tab-card__title secondary-title">PROJETOS</span>
+                    <span class="tab-card__description txt txt--darker">
+                        Clique aqui para entrar na aba PROJETOS onde você encontrará todos os projetos que eu fiz,
+                        incluindo os feitos em curso, projetos pessoais e profissionais. Você terá acesso a todos os
+                        códigos de cada projeto que eu postar ali e também a um link da explicação e documentação do
+                        projeto
+                    </span>
+                </div>
+            </a>
+            <a href="./html/learn/index.html" class="removal">
+                <div class="tab-card">
+                    <span class="tab-card__title secondary-title">APRENDA</span>
+                    <span class="tab-card__description txt txt--darker">
+                        Clique aqui para entrar na aba APRENDA. Essa aba é mais focada para visitantes ocasionais que
+                        gostariam de aprender o que eu já aprendi e o que você encontrará lá são explicações de
+                        conceitos de programação, um índice organizado com os tópicos e subtópicos de cada coisa que eu
+                        aprendi, exercícios para treinar suas habilidades, links úteis para aulas etc.
+                    </span>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

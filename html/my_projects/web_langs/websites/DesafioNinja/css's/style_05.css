@@ -1,0 +1,90 @@
+.mm{
+    width: 100%;
+    background-color: darkblue;
+    height: 128px;
+}
+
+main{
+    margin: 0;
+    position: relative;
+}
+
+.logo{
+    width: 10%;
+    float: left;
+}
+
+.sm ul li{
+    display: inline-block;
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#box{
+    box-shadow: 0 2px 5px darkcyan;
+    padding: 10px;
+    border: 2px darkblue;
+    text-align: center;
+}
+
+h1{
+    color: darkcyan;
+    font-family: fantasy;
+}
+
+.crd{
+    display: flex;
+}
+
+.crd00{
+    margin: 0 auto;
+    width: 20%;
+    float: center; 
+    box-shadow: 0px 1px 1px 2px darkcyan;
+    transition: 0.3s;
+}
+
+#ttl{
+    text-align: center;
+    color: darkblue;
+    font-family: 'Lucida Sans Unicode';
+    font-size: large;
+}
+
+#txt{
+    font-family: Georgia;
+    text-align: justify;
+}
+
+#txt0{
+    font-family: Georgia;
+    text-align: justify;
+}
+
+#txt1{
+    font-family: Georgia;
+    text-align: justify;
+}
+
+.ftr{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: darkblue;
+    text-align: center;
+}
+
+.ftr a{
+    color: darkcyan;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 2px;
+}
+
+.ftr a:hover{
+    color: darkgray;
+}

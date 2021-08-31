@@ -1,0 +1,146 @@
+body{
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "mainTitle mainTitle mainTitle"
+    "lside ctr rside"
+    "footer footer footer";
+    grid-template-columns: [col-l] .45fr [col-c1] .10fr [col-c2] .45fr [col-r];
+}
+
+.page-container{
+    grid-column: col-l / col-r;
+}
+
+.page-container .primary-title{
+    grid-area: mainTitle;
+}
+
+.projects-ctn{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.projects-ctn > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-side-ctn{
+    margin: 0 auto;
+}
+
+.dividing-line{
+    grid-area: ctr;
+    background-color: var(--darker);
+    width: 8px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.project-card{
+    border: 2px solid var(--darker);
+    background-color: var(--light);
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card__header{
+    font-size: 1.4em;
+    background-color: var(--darker);
+    color: var(--light);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card__image{
+    width: 100%;
+    border: 2px outset var(--dark);
+    overflow: hidden;
+}
+
+.project-card__image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-card__image img:hover{
+    transform: scale(1.2);
+}
+
+.project-card__description{
+    padding: 2px 10px;
+    flex-grow: 1;
+}
+
+.project-card__info-display{
+    background-color: #ccc;
+    border-top: 2px solid var(--darker);
+    border-bottom: 2px solid var(--darker);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card__info{
+    padding: 4px 0;
+}
+
+.project-card__links-ctn{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.project-card__link{
+    border: 2px solid var(--darker);
+    background-color: var(--light);
+    padding: 6px;
+    align-self: center;
+    height: fit-content;
+}
+
+.project-card__link:hover{
+    border: 2px outset var(--light);
+    background-color: #ccc;
+    transition: var(--medium-transition);
+}
+
+.project-card__link--download span{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px){
+    .project-card__info-display { padding: 4px; justify-content: space-between;}
+
+    .project-card__info, .project-card__info b{display: flex;}
+    .project-card__info b, .project-card__info i{align-self: flex-end;}
+}
+
+@media screen and (max-width: 768px){
+    .projects-ctn{flex-direction: column;}
+    .dividing-line{height: 4px; width: 100%;;}
+
+    .project-card {margin: 10px; max-width: 700px;}
+}
+
+@media screen and (max-width: 375px){
+    .project-card{width: 95%; max-width: 350px;}
+
+    .project-card__info-display{display: block;}
+    
+    .project-card__links-ctn {
+        padding: 8px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .project-card__link {align-self: stretch; text-align: center;}
+}

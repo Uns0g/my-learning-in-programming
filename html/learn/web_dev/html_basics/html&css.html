@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../../../core.css">
+    <link rel="stylesheet" href="../../../../css/learn/learn-core.css">
+    <link rel="stylesheet" href="../../../../css/learn/web_dev/html-css-basics.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS - Aprenda</title>
+    <meta name="description" content="">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../../../index.html">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../../../index.html" class="navbar__button">HOME</a></li>
+            <li><a href="../../../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../../../my_projects/web_langs/web-langs-projects.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button active">APRENDA<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../web-dev-topic.html">Desenvolvimento Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="../cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <aside class="aside-left">
+        <div class="content-index">
+            <div class="content-index__header">
+                <a href="../../index.html">
+                    <h1>TÓPICOS</h1>
+                </a>
+            </div>
+            <div class="content-index__topics-ctn">
+                <ul>
+                    <li><b class="topic"><span onclick="" class="material-icons">
+                                navigate_next
+                            </span><a href="../web-dev-topic.html">WEB-DEV</a></b>
+                        <ul class="topics__dropdown-ctn">
+                            <li><b class="topic__first-layer"><span onclick="" class="material-icons">
+                                        navigate_next
+                                    </span><a href="">HTML & CSS - Básico</a></b>
+                                <ul class="topics__dropdown-ctn">
+                                    <li><a class="topic__second-layer"
+                                            href="../html_basics/html-structure.html">Estrutura HTML</a></li>
+                                    <li><a class="topic__second-layer" href="">Tags Semânticas HTML</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="page-container">
+        <article>
+            <h1 class="primary-title">HTML & CSS Básico</h1>
+            <p class="txt">
+                Esta seção do Aprender é focada em ensinar o mais básico de HTML e CSS, se você já sabe as tags mais
+                comumente usadas e sabe <s>fazer exercício de colorir para criança</s> as estilizações mais básicas com
+                CSS <a href="#">pule esta parte</a> e avançe para o intermediário, onde aprenderá mais sobre o
+                funcionamento de tags específicas e estilizações um pouco mais avançadas, como <a href="#">Grid</a> e <a
+                    href="#">FlexBox</a> e <a href="#">Media Queries</a>.
+            </p>
+            <h2 class="secondary-title">O HTML</h2>
+            <p class="txt">
+                O <dfn title="HyperText Markup Language">HTML</dfn> é uma linguagem de marcação de texto, ou
+                seja ela marca o texto de um documento/arquivo
+                de... texto, diferenciando-os por tags, que servem justamente para a marcação.
+            </p>
+            <p class="txt">
+                O HTML é usado para estruturar páginas da web (que são também documentos). Ele que realmente cria quase
+                tudo o que se vê no site e dá nome ao que é criado, sendo a primeira coisa que é carregada pelo seu
+                navegador quando você abre uma página.
+            </p>
+            <h2 class="secondary-title__sub">O que você vai aprender</h2>
+            <p class="txt">
+                Novamente o que você aprenderá como funciona a <a href="./html-structure.html">estruturação</a> de uma
+                página e como você
+                pode estruturar as suas da maneira mais básica possível, além de saber as tags mais comuns na construção
+                de um site.
+            </p>
+            <p class="txt">
+                Também já aprenderá a nomenclatura que talvez seja a mais usada pelos desenvolvedores, o <a href="#"
+                    class="txt--darker">BEM</a>, acrônimo para Block Element Modifier ou em português "Bloco Elemento Modificador" para poupar você de uma das
+                tarefas mais chatas que um desenvolvedor front-end tem que fazer, nomear classes de uma maneira
+                compreensível.
+            </p>
+            <p class="txt">
+                Já aqui você aprenderá como funciona a sintaxe do HTML
+            </p>
+            <h2 class="secondary-title__sub">Sintaxe E Funcionamento</h2>
+            <p class="txt">
+                A sintaxe<a href="#note1" class="note" id="note1Ref"><sub>1</sub></a> do HTML é muito simples e seu funcionamento
+                ainda mais
+                simples.
+            </p>
+            <p class="txt">
+                A tag (<span class="txt--darker">&lt;&gt;</span>) define que aquele texto digitado no documento HTML e o
+                vai ser "marcado", classificado de um certo modo, ou seja, indica que aquilo é um <span
+                    class="txt--darker">elemento</span> e o conteúdo da tag <span class="txt--darker">&lt;&gt;</span>
+                define qual é o tipo do elemento, com o que efetivamente ele irá ser "marcado".
+            </p>
+            <p class="txt">
+                Os elementos no código html são como caixas dentro da tela, tanto é que se você já selecionou algum
+                texto em uma página (se você tem entre 12 e 72 anos de idade certamente já fez isso) percebe que um
+                retângulo é criado ao redor do texto que você seleciona, isso já mostra que até mesmo o texto é uma
+                "<span class="txt--darker">caixa</span>" no HTML e o tamanho dela (caixa) é definido pelo espaço que o
+                conteúdo ocupa nela.
+            </p>
+            <p class="txt">
+                Tirando algumas tags específicas que não convém mencionar agora, todas as tags HTML tem um começo e um
+                fim definidos, por exemplo a tag para este texto é a tag <code class="html-element">&lt;p&gt;</code> que
+                indica que o texto
+                faz parte de um parágrafo, essa tag começa com <code class="html-element">&lt;p&gt;</code> e termina com
+                <code class="html-element">&lt;/p&gt;</code>.
+            </p>
+            <p class="txt">
+                Em suma os elementos HTML de uma página são marcados em um código HTML deste modo:
+            </p>
+            <div class="explanatory-img">
+                <img src="../../../../img/learn/web-dev/html&css-basics/image03.png"
+                    alt="Imagem para auxiliar na explicação do conteúdo passado">
+                <span>Representação de um elemento em um código HTML</span>
+                <span class="txt--small">Retirado do livro HTML & CSS</span>
+            </div>
+            <p class="txt">
+                E o HTML também permite que elementos sejam inseridos dentro de outros, como neste exemplo:
+            </p>
+            <div class="explanatory-code">
+                <span class="txt--big">
+                    <code class="html-element">&lt;p&gt;<span class="code-text">Um Elemento pode ter</span> <code class="html-element inline">&lt;/span&gt;<span class="code-text">outro</span>&lt;/span&gt;</code> <span class="code-text">dentro dele.</span>&lt;/p&gt;</code>
+                </span>
+            </div>
+            <p class="txt">Desse modo você obtem um elemento dentro de outro, uma <a
+                    href="./html-structure.html">"caixa" dentro de outra
+                    "caixa"</a> e vai construindo estruturas cada vez mais complexas dentro do seu site.
+            </p>
+            <h2 class="secondary-title__sub">Visualizando um código HTML</h2>
+            <p class="txt">
+                Você pode visualizar um código HTML agora mesmo nesta mesma página que você está lendo (eu espero pelo
+                menos) <span class="txt--darker">(õ_õ)</span>. Para fazer isto é simples, aperta a tecla <kbd>F12</kbd>
+                do seu teclado, ou pressionar ao mesmo tempo as teclas <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
+                <kbd>I</kbd>, ou até clicar com o botão direito do seu mouse e selecionar a última opção que aparece
+                "<i>Inspecionar</i>".
+            </p>
+            <p class="txt">
+                Quando fizer qualquer uma dessas operações vai aparecer na sua tela as <dfn>DevTools</dfn> (Ferramentas
+                de Desenvolvedor) que parecem uma tecnologia alienígena para você que nunca tocou em um código: <s>eu
+                    disse (ou não) que esse tópico era bem básico</s>
+            </p>
+            <div class="explanatory-img">
+                <img src="../../../../img/learn/web-dev/html&css-basics/image01.png"
+                    alt="Imagem para auxiliar no entendimento do conteúdo">
+                <span>DevTools do navegador Brave</span>
+            </div>
+            <p class="txt">
+                Se você entrou lá notou que o meu código possui várias tags diferentes e que algumas delas tem uma tal
+                de <dfn class="txt--darker">class</dfn> que está marcada em uma cor diferente e é seguida de um texto
+                também com cor diferente que está entre aspas <span class="txt--darker">""</span>, se você quer saber
+                sobre classes <a href="#">FUJA DAQUI!</a>, você está levemente mais avançado para este tópico, se você
+                <del>não é tão apressadinho assim</del> não quer só me acompanhe.
+            </p>
+            <p class="txt">
+                As DevTools deixam com que você também visualize o código <mark>clicando sobre alguns elementos na
+                    própria página</mark> e mostrando visualmente as tais "<span class="txt--darker">caixas</span>" de
+                que mencionei anteriormente. Se você também clicar em algum elemento no código vai visualizar essas
+                caixas na página, mas para isso <span class="txt--darker">a opção de selecionar elemento deve estar
+                    selecionada</span>.
+            </p>
+            <div class="explanatory-img">
+                <img src="../../../../img/learn/web-dev/html&css-basics/image02.png"
+                    alt="Imagem para auxiliar no entendimento do conteúdo">
+                <span>Opção de selecionar elemento está "ativada"</span>
+                <span class="txt--small">Se você apertar <kbd>Ctrl</kbd> +
+                    <kbd>Shift</kbd> + <kbd>C</kbd> a opção também será selecionada</span>
+            </div>
+            <h2 class="secondary-title">CSS</h2>
+            <p class="txt">
+                O <dfn title="Cascade StyleSheet">CSS</dfn> é usado para <del>maquiar</del> dar um estilo para a página.
+                Ele é o responsável por dar cores,
+                definir fontes diferentes, o tamanho delas, modificar a posição dos itens na tela (ou em um container
+                específico), dar bordas e sombras, modificar links, desaparecer e aparecer elementos, fazer animações e
+                também pode definir tamanhos de elementos. Enfim... o CSS <span class="txt--darker">muda a maneira como
+                    os elementos da página são mostrados na tela</span>.
+            </p>
+            <p class="txt">
+                O CSS é a segunda coisa que o navegador carrega de uma página web, vem logo depois do HTML, por isso as
+                vezes você nota um <dfn>delay</dfn> para alguns itens de uma página se chegarem a sua forma final.
+            </p>
+            <p class="txt">
+                Se você seguir a tabela de tópicos em sequência (o que não é necessário, já que eu
+                mesmo aprendi sem uma ordem) verá que só vai começar a ver CSS depois de alguns tópicos de HTML, mas
+                como eu disse não é necessário e se quiser consultar algum tópico de CSS <del>vai pro site da
+                    W3Schools</del> é só clicar no tópico desejado.
+            </p>
+            <h2 class="secondary-title__sub">O Que você vai aprender</h2>
+            <p class="txt">
+                Você vai aprender como funciona o CSS logo na <a href="#section-seven">próxima seção</a> desta mesma
+                página, mas nessa parte mais básica de CSS você vai aprender a mudar cores dos elementos, mudar o
+                tamanho dos elementos disposição dos elementos na tela ou no container, mudar links, aparecer e
+                desaparecer elementos, aprender a <a href="#section-eight">sintaxe do CSS</a> e vai fazer tudo isso
+                enquanto constrói um site para dispositivos
+                desktop <del>Fala computador logo!</del>
+            </p>
+            <h2 class="secondary-title__sub" id="section-seven">Como Funciona O CSS</h2>
+            <p class="txt">
+                CSS significa Cascading Style Sheet o que em português pode ser traduzido para Folhas de Estilo em
+                Cascata. O nome já mostra como funcionam os arquivos/documentos de texto CSS. São folhas (arquivos) de
+                estilização de elementos HTML, estilização essa aplicada em cascata.
+            </p>
+            <p class="txt">
+                Procurando o significado de cascata na web, achei uma definição do dicionário <a
+                    href="https://www.merriam-webster.com/dictionary/cascade" class="external-link">Merriam-Webster</a>
+                que cabe muito bem ao que quero expor aqui, a definição é a seguinte:
+            </p>
+            <div class="attached-content">
+                <div class="attached-content__text">
+                    <a href="https://www.merriam-webster.com/dictionary/cascade" target="_blank"><span
+                            class="material-icons">attachment</span></a>
+                    <q>Algo organizado ou que ocorra numa série ou sucessão de estágios <span class="txt--darker">de
+                            modo que cada estágio deriva ou age sobre o resultado do anterior</span>.</q>
+                </div>
+                <span class="attached-content__translated">traduzido do inglês</span>
+            </div>
+            <p class="txt">
+                Esse efeito cascata do CSS está diretamento ligado à <a href="html-structure.html">estrutura do
+                    HMTL</a>, a estilização é aplicada a um elemento por seleção e se o elemento selecionado possui
+                "filhos" (ver <a href="#">herança</a>) <mark>ALGUMAS PROPRIEDADES</mark> serão
+                aplicadas, essas propriedades são o tipo de estilização que será aplicada, se você quer alterar o
+                tamanho do texto de um elemento por exemplo terá que usar a propriedade <code
+                    class="txt--darker css-property">font-size</code><a href="#note2" class="note" id="note2Ref"><sub>2</sub></a> e
+                os
+                elementos "<span class="txt--darker">filhos</span>" a esse estilizado, por não terem o seu próprio
+                tamanho de fonte definido ainda, herdarão do "<span class="txt--darker">pai</span>" o tamanho.
+                <a href="html-structure.html/"></a>
+            </p>
+            <h2 class="secondary-title__sub" id="section-eight">Sintaxe do css</h2>
+            <p class="txt">
+                A sintaxe do CSS é também de fácil entendimento.
+            </p>
+            <p class="txt">
+                Como disse, o CSS funciona por seleção e herança. O elemento selecionado é chamado de <span
+                    class="txt--darker">seletor</span><a href="#note3" class="note" id="note3Ref"><sub>3</sub></a> e esse seletor
+                recebe <span class="txt--darker">atributos</span> ou propriedades como queira chamar, que, como também
+                disse, são
+                os tipos de estilização e os atributos recebem valores que são... <span
+                    class="txt--darker">valores</span>.
+            </p>
+            <p class="txt">
+                Para ficar mais fácil de entender veja o exemplo logo abaixo.
+            </p>
+            <div class="explanatory-code">
+                <span class="txt--big">
+                    <code class="css-selector">seletor</code>{<br>
+                        <code class="css-property" style="margin-left: 20px;">atributo: <code class="html-css-value">valor</code>;</code>
+                    }
+                </span>
+            </div>
+            <p class="txt">
+                A sintaxe toda do CSS é basicamente essa, pouca coisa sofre algumas alterações, por exemplo os <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"
+                    class="external-link" target="_blank">pseudo-elementos e pseudo-classes</a> (que são tópicos mais
+                avançados) são
+                declarados logo após os seletores, sendo que os pseudo-elementos são identificados pelo sinal de dois
+                pontos repetido <span class="css-pseudo">::</span> e as pseudo-classes identificadas pelo sinal de dois
+                pontos <span class="css-pseudo">:</span>
+            </p>
+            <div class="explanatory-code">
+                <span class="txt--big">
+                    <code class="css-selector">seletor</code><code class="css-pseudo">::pseudo-elemento</code>{<br>
+                        <code class="css-property ident1">atributo: <code class="html-css-value">valor</code>;</code>
+                    }<br>
+                    <code class="css-selector">seletor</code><code class="css-pseudo">:pseudo-classe</code>{<br>
+                        <code class="css-property ident1">atributo: <code class="html-css-value">valor</code>;</code>
+                    }<br>
+                </span>
+            </div>
+            <p class="txt">
+                Há também as variáveis, funções e animações (isso mesmo, funções e variáveis no CSS) que tem uma maneira
+                de ser escrita um pouco diferente, mas não alteram nada na estrutra original do CSS.
+            </p>
+        </article>
+        <button class="change-display"><span class="material-icons">
+            swap_horiz
+            </span>
+        </button>
+        <section class="btns-ctn">
+            <div>
+                <a href="../web-dev-topic.html"><span class="material-icons">
+                        navigate_before
+                    </span><i>PREVIOUS</i></a>
+                <i>Navegar para a anterior</i>
+            </div>
+            <div>
+                <i>Navegar para a próxima</i>
+                <a href="html-structure.html"><span class="material-icons">
+                        navigate_next
+                    </span><i>NEXT</i></a>
+            </div>
+        </section>
+        <section class="notes-section">
+            <dl>
+                <dt id="note1"><a href="#note1Ref">Nota 1</a></dt>
+                <dd>Se você não sabe <span class="txt--darker">ABSOLUTAMENTE NADA</span> de programação, a sintaxe é a
+                    maneira como uma linguagem é escrita, da mesma maneira que uma língua escrita tem a sua sintaxe as
+                    linguagens também têm as suas próprias, que normalmente são bem menos difíceis e a maioria das
+                    linguagens seguem padrões para suas estruturas, no caso, como HTML e CSS são linguagens singulares
+                    e têm sintaxes também singulares.</dd>
+                <dt id="note2"><a href="#note2Ref">Nota 2</a></dt>
+                <dd>
+                    A propriedade font-size é utilizada para alterar o tamanho da fonte no conteúdo do elemento, ela
+                    pode receber valores em de tamanho(<code class="html-css-value">px</code> e <span
+                        class="html-css-value">%</span>), valores globais <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/inherit"
+                        class="html-css-value">inherit</a>, <a href="https://www.w3schools.com/cssref/css_initial.asp"
+                        class="html-css-value">initial</a>, <a href="https://www.geeksforgeeks.org/css-revert-keyword/"
+                        class="html-css-value">revert</a>, <a
+                        href="https://www.htmldog.com/references/css/values/unset/" class="html-css-value">unset</a>,
+                    valores próprios da propriedade font-size e valores em porcentagem (<span
+                        class="html-css-value">%</span>)
+                </dd>
+                <dt id="note3"><a href="#note3Ref">Nota 3</a></dt>
+                <dd>
+                    Até agora utilizei o termo elemento para se referir a seletores do css, mas saiba desde já que não
+                    usarei mais esse termo de mais fácil entendimento e usarei o termo técnico seletor, porque
+                    elemento é o nome dado a qualquer coisa dentro da página, já seletor é algo específico do CSS, é o
+                    que seleciona um elemento da página
+                </dd>
+                <dt id="note4">Nota 4</dt>
+                <dd>
+                    <em>[As notas não necessariamente precisam ter referência na página]</em>
+                    Uma recomendação que dou para você que quer compreender CSS de verdade é acompanhar o canal do <a
+                        href="https://www.youtube.com/kepowob/videos" class="external-link">Kevin Powell</a> e, se
+                    puder, fazer o curso dele
+                    "<a href="https://cssdemystified.com/#" class="external-link">CSS Demystified</a>", porque ele é
+                    simplesmente incrível em
+                    CSS e compreende realmente o que é essa linguagem. O canal dele tem vários truques para escrever
+                    CSS.
+                </dd>
+            </dl>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../../../main.js"></script>
+    <script src="../../../../js/learn.js"></script>
+</body>
+
+</html>

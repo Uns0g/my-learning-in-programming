@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../core.css">
+    <link rel="stylesheet" href="../../css/courses/courses.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP - Cursos</title>
+    <meta name="description" content="Homepage of MLP - My Learning On Programming website">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../index.html">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" class="navbar__button">
+                    HOME</a></li>
+            <li><a href="../courses/index.html" class="navbar__button active">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../my_projects/web_langs/web-langs-projects.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../learn/web_dev/web-dev-topic.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="../learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <h1 class="primary-title">CURSOS FINALIZADOS</h1>
+        <div class="course-cards-ctn">
+            <div class="course-card">
+                <div class="course-card__header">
+                    <h1>Desenvolvimento de Sistemas</h1>
+                </div>
+                <div class="course-card__ body">
+                    <p class="txt">
+                        O objetivo desse curso é fornecer ao aluno uma formação técnica em desenvolvimento de sistemas,
+                        abordando todos os aspectos dele, passando por desenvolvimento Web, desenvolvimento Mobile,
+                        desenvolvimento Desktop, segurança, protocolos da internet, Método Ágil, Método Cascata, banco
+                        de dados relacionais e etc
+                    </p>
+                </div>
+                <div class="course-card__buttons-ctn">
+                    <a href="https://www.vestibulinhoetec.com.br/unidades-cursos/curso.asp?c=1500" class="course-card__button" target="_blank">
+                        Ver Índice
+                    </a>
+                    <a href="./ds-projects.html" class="course-card__button">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="course-card">
+                <div class="course-card__header">
+                    <h1>Responsive Web Design FCC</h1>
+                </div>
+                <div class="course-card__ body">
+                    <p class="txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias ipsa, aperiam maiores et cum cumque libero sint nesciunt. Perferendis officiis consequuntur dignissimos sequi qui ducimus cum deleniti placeat iure?
+                    </p>
+                </div>
+                <div class="course-card__buttons-ctn">
+                    <a href="https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-principles" target="_blank" class="course-card__button">
+                        Ver Índice
+                    </a>
+                    <a href="" class="course-card__button">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-card__header">
+                    <h1>CS50 Harvard</h1>
+                </div>
+                <div class="course-card__ body">
+                    <p class="txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias ipsa, aperiam maiores et cum cumque libero sint nesciunt. Perferendis officiis consequuntur dignissimos sequi qui ducimus cum deleniti placeat iure?
+                    </p>
+                </div>
+                <div class="course-card__buttons-ctn">
+                    <a href="https://cs50.harvard.edu/x/" target="_blank" class="course-card__button">
+                        Ver Índice
+                    </a>
+                    <a href="" class="course-card__button">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div> -->
+            <!--<div class="course-card">
+                <div class="course-card__header">
+                    <h1>Other Course</h1>
+                </div>
+                <div class="course-card__ body">
+                    <p class="txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias ipsa, aperiam maiores et cum cumque libero sint nesciunt. Perferendis officiis consequuntur dignissimos sequi qui ducimus cum deleniti placeat iure?
+                    </p>
+                </div>
+                <div class="course-card__buttons-ctn">
+                    <a href="" class="course-card__button">
+                        Ver Índice
+                    </a>
+                    <a href="" class="course-card__button">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-card__header">
+                    <h1>Other Course</h1>
+                </div>
+                <div class="course-card__ body">
+                    <p class="txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias ipsa, aperiam maiores et cum cumque libero sint nesciunt. Perferendis officiis consequuntur dignissimos sequi qui ducimus cum deleniti placeat iure?
+                    </p>
+                </div>
+                <div class="course-card__buttons-ctn">
+                    <a href="" class="course-card__button">
+                        Ver Índice
+                    </a>
+                    <a href="" class="course-card__button">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-card__header">
+                    <h1>Other Course</h1>
+                </div>
+                <div class="course-card__ body">
+                    <p class="txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias ipsa, aperiam maiores et cum cumque libero sint nesciunt. Perferendis officiis consequuntur dignissimos sequi qui ducimus cum deleniti placeat iure?
+                    </p>
+                </div>
+                <div class="course-card__buttons-ctn">
+                    <a href="" class="course-card__button">
+                        Ver Índice
+                    </a>
+                    <a href="" class="course-card__button">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>-->
+        </div>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+p{
+    margin-top: 10px;
+}
+
+p::first-letter{
+    margin-left: 14px;
+}
+
+del::selection, s::selection{
+    background-color: var(--darker);
+    color: var(--light);
+}

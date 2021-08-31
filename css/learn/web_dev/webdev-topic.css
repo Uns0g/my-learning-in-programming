@@ -1,0 +1,10 @@
+.page-container__list{
+    background-color: var(--light);
+    padding: .4em 1.4em;
+    width: max-content;
+    border: 2px solid var(--darker);
+}
+
+.page-container__list a {
+    color: var(--dark);
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../core.css">
+    <link rel="stylesheet" href="../../css/courses/course-projects.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Projetos De Desenvolvimento De Sistemas</title>
+    <meta name="description" content="Homepage of MLP - My Learning On Programming website">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../index.html">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" class="navbar__button">
+                    HOME</a></li>
+            <li><a href="../courses/index.html" class="navbar__button active">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../my_projects/web_langs/web-langs-projects.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../learn/web_dev/web-dev-topic.html">Desenvolvimento Web</a>
+                    </li>
+                    <!--<li class="dropdown-menu__item"><a href="../learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <h1 class="primary-title">Projetos Do Curso de Desenvolvimento de Sistemas</h1>
+        <section class="projects-ctn">
+            <div class="projects-side-ctn">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h1>Fauki</h1>
+                    </div>
+                    <div class="project-card__image">
+                        <a href="../my_projects/web_langs/websites/Fauki/index.html"><img src="../../img/courses/project-ds_1.png" alt="project minimised layout"></a>
+                    </div>
+                    <div class="project-card__description">
+                        <p class="txt">
+                            O projeto é um site simples feito para ser uma wiki sobre animais, por isso o nome Fauki
+                            (Fauna Wiki) e o intuito dele era funcionar como uma wiki mesmo com várias páginas se
+                            linkando, mas o projeto final ficou bem longe do que eu esperava, até porque eu não me
+                            organizei muito para fazê-lo, além de ter usado Bootstrap com base em pesquisas no Google
+                            apenas.
+                        </p>
+                        <span class="txt--small">
+                            Sempre quis fazer esse projeto e se eu refazê-lo provavelmente atualizarei lá na aba do <a
+                                href="../my_projects/index.html">PROJETOS</a>
+                        </span>
+                    </div>
+                    <div class="project-card__info-display">
+                        <div class="project-card__infos-ctn">
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        category
+                                    </span>Categoria:</b><i> Web-Dev</i></div>
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        leaderboard
+                                    </span>Nível:</b><i> Básico</i></div>
+                        </div>
+                        <div class="project-card__infos-ctn">
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        handyman
+                                    </span>Ferramentas:</b><i> HTML, CSS e JS</i></div>
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        language
+                                    </span>Idioma:</b><i> Português</i></div>
+                        </div>
+                    </div>
+                    <div class="project-card__links-ctn">
+                        <a href="../my_projects/web_langs/websites/Fauki/index.html" class="project-card__link">Ver Projeto</a>
+                        <a href="../my_projects/web_langs/websites/Fauki.zip" class="project-card__link project-card__link--download" download>Download<span
+                                class="material-icons-outlined">
+                                file_download
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dividing-line"></div>
+            <div class="projects-side-ctn">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h1>Desafio Ninja</h1>
+                    </div>
+                    <div class="project-card__image">
+                        <a href="../my_projects/web_langs/websites/DesafioNinja/index.html"><img src="../../img/courses/project-ds_2.png" alt="project minimised layout"></a>
+                    </div>
+                    <div class="project-card__description">
+                        <p class="txt">
+                            Esse projeto Web foi feito para uma avaliação de JS neste curso, já devo avisar que ele é
+                            bem basico e nessa época meu conhecimento em front era bem baixo, mas se quiser conferir
+                            abra por sua conta e risco.
+                        </p>
+                        <span class="txt--small">Não faço a mínima ideia do porquê coloquei esse nome.</span>
+                    </div>
+                    <div class="project-card__info-display">
+                        <div class="project-card__infos-ctn">
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        category
+                                    </span>Categoria:</b><i> Web-Dev</i></div>
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        leaderboard
+                                    </span>Nível:</b><i> Básico</i></div>
+                        </div>
+                        <div class="project-card__infos-ctn">
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        handyman
+                                    </span>Ferramentas:</b><i> HTML, CSS e JS</i></div>
+                            <div class="project-card__info"><b><span class="material-icons">
+                                        language
+                                    </span>Idioma:</b><i> Português</i></div>
+                        </div>
+                    </div>
+                    <div class="project-card__links-ctn">
+                        <a href="../my_projects/web_langs/websites/DesafioNinja/index.html" class="project-card__link">Ver o Projeto</a>
+                        <a href="../my_projects/web_langs/websites/DesafioNinja.zip" class="project-card__link project-card__link--download" download>Download<span
+                                class="material-icons-outlined">
+                                file_download
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../main.js"></script>
+</body>
+
+</html>

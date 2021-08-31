@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../../core.css">
+    <link rel="stylesheet" href="../../../css/my_projects/web-langs.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Linguagens Web</title>
+    <meta name="description" content="Homepage of MLP - My Learning On Programming website">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../../index.html">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../../index.html" class="navbar__button">
+                    HOME</a></li>
+            <li><a href="../../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button active">PROJETOS<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="#">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../../learn/web_dev/web-dev-topic.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="../../learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../../learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../../learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <h1 class="primary-title">Projetos Web</h1>
+        <section class="description">
+            <p class="txt txt--big">
+                Aqui você vai encontrar os projetos web mais profissionais que eu fiz, tanto projetos
+                pessoais meus quanto projetos que fiz com outras pessoas, não incluindo obviamente aqueles
+                feitos em empresa.
+            </p>
+            <p class="txt txt--big">
+                <span class="txt--darker">ATENÇÃO</span> você só encontrará sites e aplicações web aqui,
+                escritas com linguagens e frameworks <span class="txt--darker">voltados para Web</span>
+                (HTML, CSS, JS, PHP, WASP etc) nessa seção - com exceção das linguagens para consulta,
+                manipulação, controle e definição de dados <del>vulgo SQL</del>.
+            </p>
+        </section>
+        <section class="projects-section">
+            <div class="project">
+                <div class="project__section-left">
+                    <div class="project__title">
+                        <h2 class="secondary-title">Desafio Ninja</h2>
+                    </div>
+                    <div class="project__img">
+                        <img src="../../../img/courses/project-ds_2.png" alt="Imagem mostrando o layout da página">
+                    </div>
+                    <div class="project__tools">
+                        <b><span class="material-icons">handyman</span>Ferramentas:</b>
+                        <span>HTML, CSS, JS</span>
+                    </div>
+                </div>
+                <div class="project__section-right">
+                    <div class="project__description-title">
+                        <b>Descrição</b>
+                    </div>
+                    <div class="project__description-body">
+                        <p class="txt">
+                            Esse projeto Web foi feito para uma avaliação de JavaScript do curso de <a
+                                href="">Desenvolvimento de Sistemas</a> na ETEC. Já devo avisar de antemão que ele é
+                            bem básico e nessa época meu conhecimento em front era muito baixo e o layout não está
+                            construído da melhor maneira possível, porém se quiser conferir abra por sua conta e risco.
+                        </p>
+                    </div>
+                    <div class="project__btns-ctn">
+                        <a href="../../code-viewer/viewDesafioNinja.html" class="project__button">Ver O Código</a>
+                        <a href="#" class="project__button">Explicação do projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../../main.js"></script>
+</body>
+
+</html>

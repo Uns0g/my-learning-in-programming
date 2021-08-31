@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../../core.css">
+    <link rel="stylesheet" href="../../../css/learn/learn-core.css">
+    <link rel="stylesheet" href="../../../css/learn/web_dev/webdev-topic.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web - Aprenda</title>
+    <meta name="description" content="">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../../index.html">MLP</a><span class="main-header__logo--small">My Learning In
+                    Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../../index.html" class="navbar__button">HOME</a></li>
+            <li><a href="../../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a
+                            href="../../my_projects/web_langs/web-langs-projects.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button active">APRENDA<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="">Desenvolvimento Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="../cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <aside class="aside-left">
+        <div class="content-index">
+            <div class="content-index__header">
+                <a href="../index.html">
+                    <h1>TÓPICOS</h1>
+                </a>
+            </div>
+            <div class="content-index__topics-ctn">
+                <ul>
+                    <li><b class="topic"><span onclick="" class="material-icons">
+                                navigate_next
+                            </span><a href="">WEB-DEV</a></b>
+                        <ul class="topics__dropdown-ctn">
+                            <li><b class="topic__first-layer"><span onclick="" class="material-icons">
+                                        navigate_next
+                                    </span><a href="./html_basics/html&css.html">HTML & CSS - Básico</a></b>
+                                <ul class="topics__dropdown-ctn">
+                                    <li><a class="topic__second-layer"
+                                            href="./html_basics/html-structure.html">Estrutura HTML</a></li>
+                                    <li><a class="topic__second-layer" href="">Tags Semânticas HTML</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="page-container">
+        <article>
+            <h1 class="primary-title">Desenvolvimento Web</h1>
+            <p class="txt">
+                O Desenvolvimento Web é o nome dado ao processo de desenvolvimento de um <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines/#summary"
+                    class="external-link">website, uma página, ou uma aplicação web</a> para a rede global (internet),
+                ou
+                para uma rede local.
+            </p>
+            <h2 class="secondary-title">As ferramentas</h2>
+            <p class="txt">
+                O começo deste tópico vai focar em front-end porque é bem <s>mais fácil</s> menos difícil do que ir
+                direto para o lado do servidor<a href="#note1" class="note" id="note1Ref"><sub>1</sub></a>. Os desenvolvedores
+                front-end utilizam o HTML para <a href="./html_basics/html-structure.html">estruturar páginas</a>, o CSS
+                para estilizar e deixar a
+                página visualmente compreensível
+                para o visitante e alguma outra linguagem de programação para web<a href="#note2"
+                    class="note" id="note2Ref"><sub>2</sub></a> para
+                possibilitar a interação do usuário com a página.
+            </p>
+            <p class="txt">
+                Desenvolvedores mais experientes, após dominarem HTML, CSS, uma linguagem de programação para web
+                (normalmente o JavaScript), utilizam frameworks e/ou bibliotecas para facilitar e agilizar o trabalho de
+                desenvolver uma aplicação web ou um site e também desenvolver o back-end da aplicação ou site, você
+                provavelmente vai encontrar as seguintes ferramentas deste tipo se navegar
+                pela web:
+            </p>
+            <ul class="page-container__list">
+                <li><a href="https://getbootstrap.com/" class="external-link">Bootstrap</a> - CSS</li>
+                <li><a href="https://materializecss.com/" class="external-link">Materialize</a> - CSS </li>
+                <li><a href="https://nodejs.org/en/" class="external-link">Node.js</a> - JS (back)</li>
+                <li><a href="https://dotnet.microsoft.com/apps/aspnet" class="external-link">ASP.NET
+                    </a> - C# (back)</li>
+                <li><a href="https://www.djangoproject.com/" class="external-link">Django</a> - Python (back)</li>
+                <li><a href="https://reactjs.org/" class="external-link">React</a> - JS biblioteca (front)</li>
+                <li><a href="https://laravel.com/" class="external-link">Laravel</a> - PHP (back)</li>
+            </ul>
+            <p class="txt">
+                Obviamente essas são apenas alguns exemplos, existem vários frameworks e bibliotecas para praticamente
+                qualquer linguagem web que existe.
+            </p>
+            <h2 class="secondary-title">Como Funciona a Web</h2>
+            <p class="txt"></p>
+            <h2 class="secondary-title">Por onde começar?</h2>
+            <p class="txt">Depende do que você quer, mas no geral a maior parte dos desenvolvedores começam aprendendo
+                como funciona a "containerização" do HTML, depois partem para o CSS e aprendem o que é mais usual na
+                estilização e partem para alguma linguagem de programação, normalmente o JS (JavaScript) porque <del>tem
+                    mais tutorial no YouTube</del> é a mais utilizada para programação front.
+            </p>
+            <p class="txt">Se quiser ir pelo caminho <s>que eu defini</s> mais fácil começe por aqui: <a
+                    href="./html_basics/html-structure.html">Estrutura do HTMl</a>
+            </p>
+        </article>
+        <button class="change-display"><span class="material-icons">
+                swap_horiz
+            </span>
+        </button>
+        <section class="btns-ctn">
+            <div>
+                <a href="../../learn/index.html"><span class="material-icons">
+                        navigate_before
+                    </span><i>PREVIOUS</i></a>
+                <i>Navegar para a anterior</i>
+            </div>
+            <div>
+                <i>Navegar para a próxima</i>
+                <a href="./html_basics/html&css.html"><span class="material-icons">
+                        navigate_next
+                    </span><i>NEXT</i></a>
+            </div>
+        </section>
+        <section class="notes-section">
+            <dl>
+                <dt id="note1"><a href="#note1Ref">Nota 1</a></dt>
+                <dd>O lado do servidor é o dito back-end, diferentemente do front, o back se foca não no cliente, mas no
+                    servidor. Enquanto o front cuida da parte visual do site/aplicação o back cuida da organização dos
+                    dados armazenados no servidor, segurança, autenticação e autorização de usuários, administração do
+                    banco de dados, manipulação de dados e tantos outros termos a mais que eu, como um "front-end
+                    developer" não tenho criatividade para nomear.</dd>
+                <dt id="note2"><a href="#note2Ref">Nota 2</a></dt>
+                <dd>HTML e CSS não são linguagens de programação, HTML é uma linguagem de marcação (a única deste tipo)
+                    de hipertexto (sei lá o que é isso), tanto é que HTML é acrônimo para <i>HyperText Markup
+                        Language</i> e CSS é uma linguagem de estilização de elementos de documentos (documentos HTML no
+                    caso).</dd>
+            </dl>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../../main.js"></script>
+    <script src="../../../js/learn.js"></script>
+</body>
+
+</html>

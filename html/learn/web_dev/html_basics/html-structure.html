@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../../../core.css">
+    <link rel="stylesheet" href="../../../../css/learn/learn-core.css">
+    <link rel="stylesheet" href="../../../../css/learn/web_dev/html-structure.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Do HTML - APRENDA</title>
+    <meta name="description" content="***">
+    <meta name="author" content="***">
+</head>
+
+<body>
+    <header class="main-header" id="gotoHeader">
+        <div class="main-header__logo">
+            <h1><a href="../../../../index.html">MLP</a><span class="main-header__logo--small">My Learning In
+                    Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar" id="gotoNav">
+        <ul>
+            <li><a href="../../../../index.html" class="navbar__button">
+                    HOME</a></li>
+            <li><a href="../../../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south
+                    </div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a
+                            href="../../../my_projects/web_langs/web-langs-projects.html">Web</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button active">APRENDA<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a
+                            href="../../../my_projects/web_langs/web-langs-projects.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="./learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="./learn/projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="./learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <aside class="aside-left">
+        <div class="content-index">
+            <div class="content-index__header">
+                <a href="../../index.html">
+                    <h1>TÓPICOS</h1>
+                </a>
+            </div>
+            <div class="content-index__topics-ctn">
+                <ul>
+                    <li><b class="topic"><span onclick="" class="material-icons">
+                                navigate_next
+                            </span><a href="../web-dev-topic.html">WEB-DEV</a></b>
+                        <ul class="topics__dropdown-ctn">
+                            <li><b class="topic__first-layer"><span onclick="" class="material-icons">
+                                        navigate_next
+                                    </span><a href="../html_basics/html&css.html">HTML & CSS - Básico</a></b>
+                                <ul class="topics__dropdown-ctn">
+                                    <li><a class="topic__second-layer" href="#">Estrutura HTML</a></li>
+                                    <li><a class="topic__second-layer" href="">Tags Semânticas HTML</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="page-container">
+        <article>
+            <h1 class="primary-title">Estrutura Do HTML</h1>
+            <p class="txt">
+                Para construir qualquer página você deve estruturá-la com as tags. A estruturação é muito simples de
+                entender e ainda mais simples de executar
+            </p>
+            <h2 class="secondary-title">Principais Tags</h2>
+            <p class="txt">
+                As tags simplesmente classificam um elemento da página. A palavra tag significa etiqueta, uma etiqueta
+                real
+                marca um produto com alguma coisa, a tag faz o mesmo.
+            </p>
+            <p class="txt">
+                Se você ver uma tag <span class="html-element">&lt;p&gt;</span> por exemplo, ela indica que aquela parte
+                da
+                página é um
+                parágrafo, se ver uma tag <span class="html-element">&lt;strong&gt;</span> indica que aquela parte do
+                site
+                está em <strong>negrito</strong> e que será pronunciada em <strong style="font-weight: normal;">tom
+                    mais
+                    grave</strong>
+                por leitores de página, se ver uma tag <span class="html-element">&lt;em&gt;</span> indica que aquela
+                parte
+                será
+                marcada em <em>itálico</em> e terá <em style="font-style: normal;">ênfase</em> na pronúncia por leitores
+                de
+                página e assim se sucede para cada tag. <mark>O que está inserido entre o &lt;&gt; indica o que uma
+                    tag "marca" na página</mark>.
+            </p>
+            <h2 class="secondary-title__sub">Lista de tags</h2>
+            <div class="explanatory-content">
+                <table>
+                    <thead>
+                        <th>Tag</th>
+                        <th>Função</th>
+                        <th>Exemplo</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--Doctype-->
+                            <td><a href="https://www.w3schools.com/tags/tag_doctype.asp" class="external-link"><code
+                                        class="html-element">&lt;!DOCTYPE html&gt;</code></a>
+                            </td>
+                            <td>Define que o tipo do texto que vem no documento é HTML</td>
+                            <td>Aperta <kbd>F12</kbd> e vai pro topo do arquivo</td>
+                        </tr>
+                        <tr>
+                            <!--html-->
+                            <td><a href="https://www.w3schools.com/tags/tag_html.asp" class="external-link"><code
+                                        class="html-element">&lt;html&gt;</code></a></td>
+                            <td>Define o começo do html. Vem logo depois do <span class="txt--darker">&lt;!DOCTYPE
+                                    html&gt;</span></td>
+                            <td>Vai um pouco pra baixo de onde encontrou o <span class="txt--darker">&lt;!DOCTYPE
+                                    html&gt;</span></td>
+                        </tr>
+                        <tr>
+                            <!--head-->
+                            <td><a href="https://www.w3schools.com/tags/tag_head.asp" class="external-link"><code
+                                        class="html-element">&lt;head&gt;</code></a></td>
+                            <td>Define o que vem antes da página, o que precisa ser carregado primeiro, como o título,
+                                formatação do texto, links para css, autor, descrição e etc. Funciona como a "cabeça" de
+                                um
+                                site realmente</td>
+                            <td>Logo abaixo do <span class="txt--darker">&lt;html&gt;</span> vai encontrar o <span
+                                    class="txt--darker">&lt;head&gt;</span> e suas tags</td>
+                        </tr>
+                        <tr>
+                            <!--link-->
+                            <td><a href="https://www.w3schools.com/tags/tag_link.asp" class="external-link"><code
+                                        class="html-element">&lt;link&gt;</code></a></td>
+                            <td>Linka o documento com outros documentos externos que servem para a estilização como
+                                ícones,
+                                fontes, <a href="https://kenzie.com.br/blog/favicon/" class="external-link">favicons</a>
+                                e
+                                folhas de estilo para aquela página específica</td>
+                            <td>Dentro do <span class="txt--darker">&lt;head&gt;</span> você verá quatro links, três
+                                para
+                                folhas de estilo (CSS) e uma para o <a href="https://fonts.google.com/icons"
+                                    class="external-link">Material Icons</a> que possibilita que eu coloque ícones como
+                                esse
+                                aqui <span class="material-icons" style="color: goldenrod">insert_emoticon</span></td>
+                        </tr>
+                        <tr>
+                            <!--meta-->
+                            <td><a href="https://www.w3schools.com/tags/tag_meta.asp" class="external-link"><code
+                                        class="html-element">&lt;meta&gt;</code></a></td>
+                            <td>Define informações essenciais do documento como a formatação do texto, o nome do autor,
+                                as
+                                <dfn class="txt--darker">keywords</dfn> para achar a página na web, a descrição do
+                                conteúdo
+                                da página, a escala inicial que o site vai assumir na tela e demais dados para a <a
+                                    href="">Responsividade</a> da página
+                            </td>
+                            <td>Dentro da <span class="txt--darker">&lt;head&gt;</span>, logo abaixo dos links você pode
+                                ver
+                                algumas tags <span class="txt--darker">&lt;meta&gt;</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_title.asp" class="external-link"><code
+                                        class="html-element">&lt;title&gt;</code></a></td>
+                            <td>Define o título da página para o navegador</td>
+                            <td>Veja o nome que está escrito na sua aba (<span class="txt--darker">Estrutura Do HTML -
+                                    APRENDA</span>) e compare com o que está escrito entre o title e verá que é a exata
+                                mesma coisa
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--body-->
+                            <td><a href="https://www.w3schools.com/tags/tag_body.asp" class="external-link"><code
+                                        class="html-element">&lt;body&gt;</code></a></td>
+                            <td>Define onde começa a parte em que o usuário vê alguma coisa na tela mesmo. O "corpo" da
+                                página, como o próprio nome já diz, é onde todo o html visível da página é colocado é o
+                                principal "container" de qualquer página, guarda toda a estrutura da página propriamente
+                                dita.</td>
+                            <td>Você já está olhando uma <code class="html-element">&lt;td&gt;</code><a href="#note1"
+                                    class="note" id="note1Ref"><sub>1</sub></a> que está dentro de um <span
+                                    class="txt--darker">&lt;body&gt;</span> neste exato momento, nesta mesma página.
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--header-->
+                            <td><a href="https://www.w3schools.com/tags/tag_header.asp" class="external-link"><code
+                                        class="html-element">&lt;header&gt;</code></a></td>
+                            <td>Define o cabeçalho da página. Normalmente nessa parte da página vão: o nome do
+                                site/empresa,
+                                as redes sociais do autor ou do site, a barra de navegação, a barra de pesquisa (se
+                                tiver)
+                                e, case for uma aplicação web, funções que ela tem. <span class="txt--small">É uma <a
+                                        href="#">tag
+                                        semântica</a></span></td>
+                            <td>Para ver um exemplo clique <a href="#gotoHeader">aqui</a></td>
+                        </tr>
+                        <tr>
+                            <!--nav-->
+                            <td><a href="https://www.w3schools.com/tags/tag_nav.asp" class="external-link"><code
+                                        class="html-element">&lt;nav&gt;</code></a></td>
+                            <td>Define onde fica a barra de navegação de uma página, as abas que você clica e te
+                                direcionam
+                                para outra página <span class="txt--small">É uma <a href="#">tag semântica</a></span>
+                            </td>
+                            <td>Para ver um exemplo clique <a href="#gotoNav">aqui</a></td>
+                        </tr>
+                        <tr>
+                            <!--main-->
+                            <td><a href="https://www.w3schools.com/tags/tag_main.asp" class="external-link"><code
+                                        class="html-element">&lt;main&gt;</code></a></td>
+                            <td>Define onde fica a seção principal da página, por isso esse nome. É aqui onde vai o
+                                texto,
+                                as imagens e todo o conteúdo mesmo de uma página</td>
+                            <td>Essa tag está presente nessa mesma página, todo o "lado direito" dela é um <span
+                                    class="txt--darker">&lt;main&gt;</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_section.asp" class="external-link"><code
+                                        class="html-element">&lt;section&gt;</code></a></td>
+                            <td>
+                                Define que aquela parte da página é uma seção <s>meio óbvio</s> específica. Normalmente
+                                essa
+                                tag vem acompanhada de uma <span class="html-attribute">class=""</span> para especificar
+                                do
+                                que é a seção, se é uma seção de artigos, uma seção de referências e links úteis, se é
+                                uma
+                                seção para navegar para páginas relacionadas, se é uma seção com os seus amigos em uma
+                                rede
+                                social, enfim... uma seção.
+                            </td>
+                            <td>Se for para a <a href="../../../../index.html">página principal</a> do site e
+                                inspecioná-la
+                                verá que há uma section com classe de resume lá</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_div.asp" class="external-link"><code
+                                        class="html-element">&lt;div&gt;</code></a></td>
+                            <td>
+                                Define uma divisão na página, antigamente funcionava como uma section, era usada para
+                                estruturar toda a página, mas hoje continua importante e divide a estruturação com as
+                                tags
+                                semânticas.<br>
+                                A div está presente em praticamente tudo o que você vê na página, é uma das tags mais
+                                importantes para adicionar as mais variadas coisas dentro de uma página.
+                            </td>
+                            <td>
+                                <div id="explanatory-div">
+                                    <span>Esse quadrado é uma div</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="" class="external-link">Headings</a></td>
+                            <td>Os headings são os títulos de uma página, indicam para o usuário e também para o
+                                navegador a
+                                "importância" do conteúdo a seguir. Têm 6 níveis, <code
+                                    class="html-element">&lt;h1&gt;</code>, <code
+                                    class="html-element">&lt;h2&gt;</code>,
+                                <code class="html-element">&lt;h3&gt;</code>, <code
+                                    class="html-element">&lt;h4&gt;</code>,
+                                <code class="html-element">&lt;h5&gt;</code> e <code
+                                    class="html-element">&lt;h6&gt;</code>
+                                sendo que o tamanho da fonte e a importância do conteúdo são maiores nos primeiros
+                                níveis
+                            </td>
+                            <td>
+                                <h1>Título h1</h1>
+                                <h2>Título h2</h2>
+                                <h3>Título h3</h3>
+                                <h4>Título h4</h4>
+                                <h5>Título h5</h5>
+                                <h6>Título h6</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_p.asp" class="external-link"><code
+                                        class="html-element">&lt;p&gt;</code></a></td>
+                            <td>Define um parágrafo no texto</td>
+                            <td>
+                                <p>Isto é um parágrafo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_span.asp" class="external-link"><code
+                                        class="html-element">&lt;span&gt;</code></a></td>
+                            <td>
+                                <p>
+                                    O span é uma tag "fantasma" digamos assim. Inclusive se for pesquisar por span no <a
+                                        href="https://www.deepl.com/en/translator#en/pt/span"
+                                        class="external-link">DeepL</a> não vai achar nenhuma tradução.
+                                </p>
+                                <p>
+                                    Normalmente essa tag é usada para dar destaque a um texto, atribuir uma cor, alterar
+                                    sua
+                                    fonte, alterar o seu tamanho, colocar um ícone ou algo desse genêro, mas isso
+                                    acontece
+                                    por pura "convenção", digamos assim, dos desenvolvedores
+                                </p>
+                                <span class="txt--small">PS: Não confundir com a tag <a href="#"
+                                        class="external-link"><code class="html-element">&lt;mark&gt;</code></a> que
+                                    marca um texto
+                                    <mark>assim</mark> e também serve para destacar texto</span>
+                            </td>
+                            <td>
+                                Este é um texto sem formatação nenhuma dentro de uma tag <span
+                                    class="html-element">&lt;td&gt;</span><br><span>Este é um texto em um span, que não
+                                    modifica em nada o texto</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_a.asp" class="external-link"><code
+                                        class="html-element">&lt;a&gt;</code></a></td>
+                            <td>Define que aquele texto guarda um link, vem acompanhado normalmente de um atributo
+                                chamado
+                                de <code class="html-attribute">href</code> que mostra o caminho (URL) a que aquele
+                                link se referencia. Esse href significa <em>hypertext reference</em> referência de
+                                hipertexto, hipertextos são vários textos com linkando uns com os outros e o que
+                                possibilita esses links no HTML é o <code class="html-element">&lt;a&gt;</code>.</td>
+                            <td>
+                                Verifique se o seu html está construído da maneira correta <a
+                                    href="https://validator.w3.org/#validate_by_input">entrando aqui</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.w3schools.com/tags/tag_img.asp" class="external-link"><code
+                                        class="html-element">&lt;img&gt;</code></a></td>
+                            <td>
+                                Define uma imagem.<br>
+                                Normalmente essa tag vem acompanhada de dois atributos <code
+                                    class="html-attribute">src</code> que indica a fonte (<span
+                                    class="txt--darker">SouRCe</span>) daquela imagem, isso é, de onde ela veio, e o
+                                atributo <code class="html-attribute">alt</code> que insere (entre as aspas "") um texto
+                                alternativo para quando a imagem, por algum motivo, não é captada
+                            </td>
+                            <td style="text-align: center;">
+                                <div><img src="../../../../img/learn/web-dev/html-structure/image02.png"
+                                        alt="Um ícone genérico de avatar"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="" class="external-link">Tabelas</a></td>
+                            <td>
+                                <p>
+                                    Um conjunto de tags feitas específicamente para construir tabelas.
+                                </p>
+                                <p>
+                                    As tabelas que você vê pela Web são constituídas de cinco tags, a principal que
+                                    declara
+                                    onde há uma tabela é a <code class="html-element">&lt;table&gt;</code>, ela se segue
+                                    de
+                                    outras duas a <code class="html-element">&lt;thead&gt;</code> e a <code
+                                        class="html-element">&lt;tbody&gt;</code> que formam a "cabeça" e o "corpo" da
+                                    tabela respectivamente, na <span class="txt--darker">&lt;thead&gt;</span> vão os
+                                    títulos
+                                    e na <span class="txt--darker">&lt;tbody&gt;</span> vai todo o conteúdo mesmo da
+                                    tabela
+                                </p>
+                                <p>
+                                    Na <span class="txt-darker">&lt;thead&gt;</span> vão as tags <code
+                                        class="html-element">&lt;th&gt;</code>, as de cabeçalho da tabela (<span
+                                        class="txt--darker">Table Header</span>), elas são usadas normalmente para
+                                    títulos,
+                                    mas não são exclusivamente para isso
+                                </p>
+                                <p>
+                                    Na <span class="txt--daker">&lt;tbody&gt;</span> vão as tags <code
+                                        class="html-element">&lt;td&gt;</code>, as de dados da tabela (<span
+                                        class="txt--darker">Table Data</span>), elas são usadas para conter qualquer
+                                    tipo de
+                                    dado.
+                                </p>
+                            </td>
+                            <td>
+                                Toda essa lista de tags que você está cendo na verdade é uma tabela com várias <span
+                                    class="txt--darker">&lt;tr&gt;</span> com 3 <span
+                                    class="txt--darker">&lt;td&gt;</span>
+                                cada.
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--lists-->
+                            <td><a href="" class="external-link">Listas</a></td>
+                            <td>As listas abarcam seis tags, três de "declaração" de listas e três de itens da lista. As
+                                de
+                                declaração são <code class="html-element">&lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;</code> que
+                                são
+                                respectivamente: lista não ordenada (<dfn class="txt--darker">Unordered List</dfn>),
+                                lista
+                                ordenada (<dfn class="txt--darker">Ordered List</dfn>) e lista de definição (<dfn
+                                    class="txt--darker">Definition List</dfn>) e as de itens são <code
+                                    class="html-element">&lt;li&gt;, &lt;dt&gt;, &lt;dd&gt;</code>, respectivamente:
+                                item de
+                                lista (<dfn class="txt--darker">List Item</dfn>), termo de definição (<dfn
+                                    class="txt--darker">Definition Term</dfn>) e descrição (<dfn
+                                    class="txt--darker">Definition Description</dfn>)
+                            </td>
+                            <td style="padding: 0 30px;">
+                                <ul class="page-container__list">
+                                    <li>Este é um item de lista não ordenada</li>
+                                    <li>Este é outro item de lista não ordenada</li>
+                                </ul>
+                                <ol class="page-container__list">
+                                    <li>Este é um item de lista ordenada</li>
+                                    <li>Este é outro item de lista ordenada</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Tags De Formatação</a></a></td>
+                            <td>
+                                <p>
+                                    Essa não é nenhuma classe de tags específicas, mas sim tags que eu gosto de chamar
+                                    por
+                                    esse nome, porque o que elas fazem é precisamente isso, formatam texto
+                                </p>
+                                <p>
+                                    As tags <code class="html-element">&lt;b&gt;</code> e <code
+                                        class="html-element">&lt;strong&gt;</code> deixam o texto em
+                                    <strong>negrito</strong>, a diferença é que a <span
+                                        class="txt--darker">&lt;strong&gt;</span> é mais usada por questões de
+                                    acessibilidade e a tag <span class="txt--darker">b</span> caiu em desuso
+                                </p>
+                                <p>
+                                    As tags <code class="html-element">&lt;i&gt;</code> e <code
+                                        class="html-element">&lt;em&gt;</code> deixam o texto em <em>itálico</em> a
+                                    diferença é a mesma da anterior... questões de acessibilidade
+                                </p>
+                                <p>
+                                    A tag <code class="html-element">&lt;small&gt;</code> deixa o texto pequeno e tem o
+                                    mesmo efeito que atribuir uma <code class="css-property">font-size</code> de <code
+                                        class="html-css-value">0.8em</code> para um elemento <span
+                                        class="txt--darker">&lt;span&gt;</span>. Não há nenhuma proibição de usar essa
+                                    tag,
+                                    eu não uso, mas se quiser usar para não ter que setar<a href="#note2" class="note"
+                                        id="note2Ref"><sub>2</sub></a> um valor no CSS sinta-se livre
+                                </p>
+                                <p>
+                                    As tags <code class="html-element">&lt;sup&gt;</code> e <code
+                                        class="html-element">&lt;sub&gt;</code> deixam o texto superecrito
+                                    <sup>assim</sup>
+                                    e subescrito <sub>assim</sub> respectivamente
+                                </p>
+                                <p>
+                                    As tags <code class="html-element">&lt;q&gt;</code> e <code
+                                        class="html-element">&lt;blockquote&gt;</code> mostram uma citação, a
+                                    diferença é que o <span class="txt--darker">&lt;q&gt;</span> define uma citação
+                                    pequena
+                                    e
+                                    coloca o texto entre aspas, como se fosse uma pequena citação, uma frase, um slogan
+                                    ou
+                                    algo assim, enquanto que o
+                                    <span class="txt--darker">&lt;blockquote&gt;</span> define uma longa citação, talvez
+                                    até
+                                    um discurso e não leva aspas.
+                                </p>
+                                </p>
+                                <p>
+                                    Uma tag muito pouco usada hoje em dia é a <code
+                                        class="html-element">&lt;u&gt;</code>
+                                    que define o texto como underline (sublinhado), <u>assim</u>, mas essa tag caiu em
+                                    desuso devido ao fato de que raramente se usa sublinhado nos textos hoje, até mesmo
+                                    em
+                                    links não se vê muitos, e também por conta do atributo <code
+                                        class="css-property">text-decoration</code> que quando recebe valor de <code
+                                        class="html-css-value">underline</code> deixa o texto sublinhado tambéml
+                                </p>
+                                <p>
+                                    As tags <code class="html-element">&lt;s&gt;</code> e <code
+                                        class="html-element">&lt;del&gt;</code> passam uma linha sobre o texto, como que
+                                    riscando-o,
+                                    a diferença é que o <span class="txt--darker">&lt;s&gt;</span> só indica que aquela
+                                    sentença no texto era verdadeira, mas agora está desatualizada, é muito usada para
+                                    indicar preços antigos, mostrar que algo está em promoção. Enquanto isso o <span
+                                        class="txt--darker">&lt;del&gt;</span> mostra um texto que realmente poderia ser
+                                    desconsiderado, deletado
+                                </p>
+                            </td>
+                            <td>
+                                <b>Essa é uma tag b</b> e <strong>essa é uma strong</strong>
+                                <hr><br>
+                                <i>Essa é uma tag i</i> e <em>essa é uma em</em>
+                                <hr><br>
+                                <small>Essa é uma tag small</small> e <span class="txt--small">esse é um span com <code
+                                        class="css-property">font-size: <code
+                                        class="html-css-value">18px</code>;</code></span>
+                                <hr><br>
+                                <sup>Esse é um sup</sup> e <sub>esse é um sub</sub>
+                                <hr><br>
+                                <q>Isso é uma citação</q> e <blockquote>Isso é uma citação grande, normalmente a fala de
+                                    alguém em uma entrevista, um trecho de livro ou algo dessa sorte</blockquote>
+                                <hr><br>
+                                <u>Aqui está a tag u</u> e <span style="text-decoration: underline;">aqui está um texto
+                                    sublinhado pelo css</span>
+                                <hr><br>
+                                Escrever sobre essas tags foi <s>legal</s> <span class="txt--big">MUITO
+                                    LEGAL!</span><br>
+                                <del>Mentira, eu não aguento mais! Pra que tanta tag? Ninguém nem usa isso.</del>
+                                <hr><br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="secondary-title">A Estrutura Propriamente Dita</h2>
+            <p class="txt">
+                A estrutura se dá pela hierarquia dos elementos, os elementos
+                "pai" contém os elementos "filhos", por isso você vê muitos programadores usando as classes <dfn
+                    class="html-css-value">container</dfn> e <dfn class="html-css-value">content</dfn> para se referir a
+                determinados elementos. Os <em>containers</em> (recipientes <s>ou só containers mesmo</s>) guardam
+                os
+                <em>contents</em> (conteúdos) dentro deles e ditam algumas regras.
+            </p>
+            <p class="txt">
+                Novamente vou propor que pense que as páginas que você vê pela web são como caixas na tela, <span
+                    class="txt--darker">porque elas realmente são</span>, essa analogia faz com que você entenda melhor
+                <del>Você que complica autor!</del> o funcionamento da estrutura <del>é simples meu Deus</del>. Ora o
+                que for feito dentro de uma caixa vai afetar as caixas que estão dentro dela.
+            </p>
+            <h2 class="secondary-title__sub">Um exemplo para auxiliar na explicação</h2>
+            <p class="txt">
+                Veja o exemplo abaixo para entender melhor a estrutura:
+            </p>
+            <div class="flipper">
+                <div class="cards-ctn">
+                    <div class="card">
+                        <div class="card__header">
+                            <h1>Tux - O Rei Dos Mascotes</h1>
+                        </div>
+                        <div class="card__body">
+                            <img src="../../../../img/learn/web-dev/html-structure/image01.png" alt="texto alternativo">
+                        </div>
+                        <div class="card__footer">
+                            <span>Passe o mouse sobre o card para ver o código</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="explanatory-code">
+                            <code
+                                class="html-element">&lt;div&gt; <code class="html-attribute">class="<code class="html-css-value">card</code>"</code></code>
+                            <p class="ident1">
+                                <code
+                                    class="html-element">&lt;div <code class="html-attribute">class="<code class="html-css-value">card__header</code>"</code>&gt;</code>
+                                <code
+                                    class="html-element ident1">&lt;h1&gt; <span class="code-text">Tux - O Rei Dos Mascotes</span> &lt;/h1&gt;</code>
+                                <code class="html-element">&lt;/div&gt;</code>
+                            </p>
+                            <p class="ident1">
+                                <code
+                                    class="html-element">&lt;div <code class="html-attribute">class="<code class="html-css-value">card__body</code>"</code>&gt;</code>
+                                <code
+                                    class="html-element ident1">&lt;img <code class="html-attribute">src="<code class="html-css-value">../../../../img/learn/web-dev/html-structure/image01.png</code>"
+                                alt="<code class="html-css-value">texto alternativo</code>"</code>&gt;</code>
+                                <code class="html-element">&lt;/div&gt;</code>
+                            </p>
+                            <p class="ident1">
+                                <code
+                                    class="html-element">&lt;div <code class="html-attribute">class="<code class="hmtl-css-value">card__footer</code>"</code>&gt;</code>
+                                <code
+                                    class="html-element ident1">&lt;span&gt; <span class="code-text">Passe o mouse sobre o card para ver o código</span> &lt;/span&gt;</code>
+                                <code class="html-element">&lt;/div&gt;</code>
+                            </p>
+                            <code class="html-element">&lt;/div&gt;</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="txt">
+                Nesse exemplo você pode ver que a <a href="https://www.homehost.com.br/blog/tutoriais/html-div/"
+                    class="html-element">&lt;div&gt;</a> <code class="html-css-value">card</code> tem 3 outros elementos
+                "filhos" que são três outras divs dentro dela
+                (podia ser qualquer outro elemento). as divs que estão dentro dela (filhas) não extrapolam os limites da
+                div principal que a contém (pai), por conta disso forma-se um card (cartão) que nada mais é que um
+                retângulo na tela contendo normalmente um título, uma imagem, talvez uma descrição e um "rodapé" (parte
+                de baixo) que vai algum texto ou botão.
+            </p>
+            <p class="txt">
+                É importante compreender qual elemento contém qual para saber realmente estruturar as páginas e também
+                para extilizar depois, já que todo o estilo cascata do CSS é a seleção de elementos da hierarquia do
+                HMTL
+            </p>
+            <h2 class="secondary-title">Montando uma página</h2>
+            <p class="txt">
+                O HTML é um documento de texto como qualquer um, mas o que transforma um documento em html é a <a
+                    href="https://www.computerhope.com/jargon/f/fileext.htm" class="external-link">extensão do
+                    arquivo</a>
+                que deve ser .html e as tags no texto propriamente dito.
+            </p>
+            <h2 class="secondary-title__sub">IDE</h2>
+            <p class="txt">
+                Para montar uma página html (que é um documento) você pode abrir um editor de texto e já começar a
+                escrever,
+                depois é só salvar esse documento como html, porém <mark>NÃO FAÇA ISSO!</mark> É muito mais aconselhável
+                que
+                você use uma <dfn title="Integrated Development Environment">IDE</dfn> que é um Ambiente de
+                Desenvolvimento
+                Integrado (do inglês Integrated Development Environment) que, por sua vez, é um programa que te auxilia
+                na
+                criação de outros programas desktop, aplicações web, sites, aplicações mobile etc.
+            </p>
+            <p class="txt">
+                A IDE que eu uso é o <a href="https://code.visualstudio.com/" class="external-link">Visual Studio
+                    Code</a>,
+                mas você pode usar qualquer outra que preferir, pode até usar uma online como o <a
+                    href="https://replit.com/" class="external-link">replit</a>.
+            </p>
+            <p class="txt">
+                A IDE que eu vou usar para explicar tudo por aqui <s>(eu acho)</s> é o <abbr
+                    title="Visual Studio Code">VSCode</abbr>. Não irei explicar sobre a instalação e os primeiros passos
+                com
+                uma IDE como o Visual Studio Code, porque no site do VSCode <a href="https://code.visualstudio.com/docs"
+                    class="external-link">já tem um guia</a> preparado para te ensinar a usar o VSCode, então, se você
+                <span class="txt--darker">nunca usou uma IDE</span> é bom começar por lá, ou pelo manual de instalação e
+                uso
+                da sua IDE de preferência.
+            </p>
+            <h2 class="secondary-title__sub">Execução</h2>
+            <p class="txt">
+                Para começar no Visual Studio Code você deve primeiramente criar uma pasta em algum lugar do seu
+                computador
+                e acessar ela clicando em File/OpenFolder e escolher a pasta indo ao caminho onde a criou.
+            </p>
+            <p class="txt">
+                Para criar um arquivo clique sobre o ícone de novo arquivo e automaticamente será pedido um nome para o
+                arquivo, coloque index.html que é o nome dado ao principal documento de uma página, o índice.
+            </p>
+            <div class="explanatory-img">
+                <div><img src="../../../../img/learn/web-dev/html-structure/image03.png" alt=""></div>
+                <div><img src="../../../../img/learn/web-dev/html-structure/image04.png" alt=""></div>
+                <span class="txt--small">Imagens de exemplo</span>
+            </div>
+            <p class="txt">
+                Para criar sua primeira página HTML escreva o código abaixo no index.html, que nada mais é do que um
+                pouco
+                do que já foi explicado aqui.
+            </p>
+            <div class="explanatory-code">
+                <code class="html-element">&lt;!DOCTYPE <code class="html-attribute">html</code>&gt;</code>
+                <code
+                    class="html-element">&lt;html <code class="html-attribute">lang="<code class="html-css-value">pt-br</code>"</code>&gt;</code>
+                <code class="html-element">&lt;head&gt;</code>
+                <div class="ident1">
+                    <code
+                        class="html-element">&lt;meta <code class="html-attribute">name="<code class="html-css-value">UTF-8</code>"</code>&gt;</code>
+                    <code
+                        class="html-element">&lt;meta <code class="html-attribute">http-equiv="<code class="html-css-value">X-UA-Compatible</code>"
+                    content="<code class="html-css-value">IE=edge</code>"</code>&gt;</code>
+                    <code
+                        class="html-element">&lt;meta <code class="html-attribute">name="<code class="html-css-value">viewport</code>"
+                    content="<code class="html-css-value">IE=edge</code>"</code>&gt;</code>
+                    <code
+                        class="html-element">&lt;title&gt;<span class="code-text">Título Do Documento</span>&lt;/title&gt;</code>
+                </div>
+                <code class="html-element">&lt;/head&gt;</code>
+                <code class="html-element">&lt;body&gt;</code>
+                <div class="ident1">
+                    <code class="html-element">&lt;h1&gt;<span class="code-text">Título 1</span>&lt;/h1&gt;</code>
+                    <code class="html-element">&lt;p&gt;</code>
+                    <p class="ident1 code-text" style="margin-top: 0; margin-bottom: 0;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Culpa, eveniet? Natus quae, assumenda modi alias, nihil officia
+                        magnam vel praesentium, non autem vero eaque. Mollitia rem officia dolorem blanditiis porro?
+                    </p>
+                    <code class="html-element">&lt;/p&gt;</code>
+                </div>
+                <code class="html-element">&lt;/body&gt;</code>
+                <code class="html-element">&lt;/html&gt;</code>
+            </div>
+            <p class="txt">
+                Para executar o código no seu navegador simplesmente vá para a pasta onde você criou o arquivo no seu
+                computador e clique sobre o arquivo index.html que automaticamente uma nova aba será aberta no seu
+                navegador
+                com o resultado daquele código (a página em si).
+            </p>
+            <p class="txt">
+                Se você executar isso no seu navegador você não vai ver um grande resultado, só um título e um texto e
+                realmente, essa página (se é que podemos chamá-la assim) eu criei para ser bem básica. Se esperava algo
+                muito impressionante com certeza foi frustrado e, se quer ficar um pouco mais, apage o que você acabou
+                de
+                fazer e escreva lá no topo html:5 e dê <kbd>Enter</kbd> :)
+            </p>
+            <p class="txt">
+                Se quiser continuar e fazer páginas realmente, avançe para o próximo tópico.
+            </p>
+        </article>
+        <button class="change-display"><span class="material-icons">
+                swap_horiz
+            </span>
+        </button>
+        <section class="btns-ctn">
+            <div>
+                <a href="html&css.html"><span class="material-icons">
+                        navigate_before
+                    </span><i>PREVIOUS</i></a>
+                <i>Navegar para a anterior</i>
+            </div>
+            <div>
+                <i>Navegar para a próxima</i>
+                <a href="semantic-tags.html"><span class="material-icons">
+                        navigate_next
+                    </span><i>NEXT</i></a>
+            </div>
+        </section>
+        <section class="notes-section">
+            <dl>
+                <dt id="note1"><a href="#note1Ref">Note 1</a></dt>
+                <dd>
+                    As tags <code class="html-element">&lt;td&gt;</code> e <code class="html-element">&lt;th&gt;</code>
+                    servem como célular pra tabela e quando colocadas em uma <code class="html-element">tr</code> "criam
+                    uma coluna".
+                </dd>
+                <dt id="note2"><a href="#note2Ref">Note 2</a></dt>
+                <dd>
+                    Setar é uma "gíria" digamos assim para atribuir, é um estrangeirismo com o verbo set do inglês que
+                    significa defininir, estabelecer atribuir. Você verá essa expressão várias vezes por aqui.
+                </dd>
+            </dl>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../../../main.js"></script>
+    <script src="../../../../js/learn.js"></script>
+</body>
+
+</html>

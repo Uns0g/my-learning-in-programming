@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../core.css">
+    <link rel="stylesheet" href="../../css/learn/learn-page.css">
+    <link rel="stylesheet" href="../../css/learn/learn-core.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP - Aprenda</title>
+    <meta name="description" content="Homepage of MLP - My Learning On Programming website">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../index.html">MLP</a><span class="main-header__logo--small">My Learning In
+                    Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" class="navbar__button">HOME</a></li>
+            <li><a href="../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button">PROJETOS<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../my_projects/web_langs/web-langs-projects.html">Web</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button active">APRENDA<div class="material-icons dd-arrow">south</div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="./web_dev/web-dev-topic.html">Desenvolvimento Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="./cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="./projects-done/projects.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="./csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <aside class="aside-left">
+        <div class="content-index">
+            <div class="content-index__header">
+                <a href="">
+                    <h1>TÓPICOS</h1>
+                </a>
+            </div>
+            <div class="content-index__topics-ctn">
+                <ul>
+                    <li><b class="topic"><span class="material-icons">
+                                navigate_next
+                            </span><a href="./web_dev/web-dev-topic.html">WEB-DEV</a></b>
+                        <ul class="topics__dropdown-ctn">
+                            <li><b class="topic__first-layer"><span onclick="" class="material-icons">
+                                        navigate_next
+                                    </span><a href="./web_dev/html_basics/html&css.html">HTML & CSS - Básico</a></b>
+                                <ul class="topics__dropdown-ctn">
+                                    <li><a class="topic__second-layer"
+                                            href="./web_dev/html_basics/html-structure.html">Estrura HTML</a></li>
+                                    <li><a class="topic__second-layer" href="">Tags Semânticas HTML</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="page-container">
+        <h1 class="primary-title">APRENDA!</h1>
+        <h2 class="secondary-title">O que é isso?</h2>
+        <p class="txt">
+            Esta aba foi feita exclusivamente para qualquer navegante do mar da internet que se deparou com programação
+            e está procurando aprender com quem está aprendendo também.
+        </p>
+        <p class="txt">
+            <span class="txt--darker">ATENÇÃO!</span> Isto não é um curso e não tenho o intuito de torná-lo um curso. Há
+            aqui alguma organização nos tópicos e você pode e deve achar coisas muito úteis - aliás é essa a intenção.
+            Isto também não sustitui a presença real de um educador acompanhando seu aprendizado. O propósito desta aba
+            do site é fornecer os conteúdos de programação que eu aprendi ou estou aprendendo para visitantes de uma
+            maneira
+            mais organizada, como uma curadoria para você, visitante, e, para mim, uma maneira de <span
+                class="txt--darker">"exercitar" o meu aprendizado</span> explicando por meio de textos informativos o
+            que aprendi.
+        </p>
+        <h2 class="secondary-title">O que você vai achar aqui</h2>
+        <p class="txt">
+            Aqui você encontrará uma série de tópicos de coisas que eu aprendi ou ainda estou aprendendo relacionadas
+            à programação e também encontrará as explicações destes tópicos detalhada ao clicar em um dos tópicos no
+            índice de tópicosà esquerda. Encontrará exercícios para fazer (se quiser), ideias de projetos que você pode
+            tentar elaborar, sites, programas e aplicativos que eu fiz para teste, estudo, hobby, profissionais
+            (incluindo alguns mais extensos e elaborados) todos explicados bem detalhadamente para que qualquer um
+            <del>até mesmo você</del> entenda.
+        </p>
+        <h2 class="secondary-title">Como navego por aqui?</h2>
+        <p class="txt">
+            É bem óbvio isso, nem sei porquê perguntei, mas <span class="txt--darker">é só utilizar o índice de
+                tópicos ao lado esquerdo</span>, como
+            eu já citei, e selecionar qualquer um que quiser ver, ou <span class="txt--darker">clicar na seta da aba
+                APRENDA</span>
+            ali em cima, porém devo alertar ao mais inexperiente visitante desta página que a aba de cima só
+            seleciona os tópicos, isso porque o menu ficaria gigantesco se eu colocasse todos os tópicos, sub-tópicos e
+            sub-sub-tópicos etc tudo dentro dela.
+        </p>
+        <h2 class="secondary-title">Como Começar</h2>
+        <p class="txt">
+            Para você começar <del>é só começar</del> saiba de antemão que você vai copiar código, ler, copiar
+            código, ler, copiar código... e no meio deste processo vai começar a identificar certos padrões, certos
+            conceitos essenciais para programar. Então no começo simplesmente sente-se pratique.
+        </p>
+        <!-- <div class="explanatory-image-ctn"><img src="" alt="imagem para auxiliar a explicação dada"></div> -->
+        <button class="change-display"><span class="material-icons">
+                swap_horiz
+            </span>
+        </button>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../main.js"></script>
+    <script src="../../js/learn.js"></script>
+</body>
+
+</html>

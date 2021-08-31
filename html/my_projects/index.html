@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../core.css">
+    <link rel="stylesheet" href="../../css/my_projects/mp.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Web</title>
+    <meta name="description" content="Homepage of MLP - My Learning On Programming website">
+    <meta name="author" content="Pedro Rossi">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <h1><a href="../../index.html">MLP</a><span class="main-header__logo--small">My Learning In Programming</span></h1>
+        </div>
+        <div class="main-header__social-media-container">
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://www.linkedin.com/in/pedro-rossi-3554a2216/" target="_blank"><img
+                        src="../../img/interface/linkedin-icon.svg" alt="the icon of linkedin"></a>
+            </div>
+            <div class="main-header__social-media-icon shadow-active">
+                <a href="https://github.com/Uns0g" target="_blank">
+                    <img src="../../img/interface/gh-icon.svg" alt="the icon of github">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" class="navbar__button">HOME</a></li>
+            <li><a href="../courses/index.html" class="navbar__button">CURSOS</a></li>
+            <li>
+                <a class="navbar__button dropdown-button active">PROJETOS<div class="material-icons dd-arrow">south
+                    </div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../my_projects/web_langs/web-langs-projects.html">Web</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar__button dropdown-button">APRENDA<div class="material-icons dd-arrow">south</div></a>
+                <ul class="dropdown-menu dropdown-menu--hidden">
+                    <li class="dropdown-menu__item"><a href="../learn/web_dev/web-dev-topic.html">Desenvolvimento
+                            Web</a></li>
+                    <!--<li class="dropdown-menu__item"><a href="../learn/cs/cs.html">Ciência Da Computação</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/projects/index.html">Projetos</a></li>
+                    <li class="dropdown-menu__item"><a href="../learn/csharp/csharp.html">C#</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <span class="mobile-menu" onclick="openMobileMenu();">&#9776;</span>
+    </nav>
+    <main class="page-container">
+        <h1 class="primary-title">Classes</h1>
+        <section class="classes-ctn">
+            <div class="classes-ctn__left-side">
+                <div class="class-card">
+                    <div class="class-card__header">
+                        <h1><span>WEB</span> Languages</h1>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="txt">
+                            Aqui você vai encontrar os projetos web mais profissionais que eu fiz, tanto projetos
+                            pessoais meus quanto projetos que fiz com outras pessoas, não incluindo obviamente aqueles
+                            feitos em empresa.
+                        </p>
+                        <p class="txt">
+                            <span class="txt--darker">ATENÇÃO</span> você só encontrará sites e aplicações web aqui,
+                            escritas com linguagens e frameworks <span class="txt--darker">voltados para Web</span>
+                            (HTML, CSS, JS, PHP, WASP etc) nessa seção - com exceção das linguagens para consulta,
+                            manipulação, controle e definição de dados <del>vulgo SQL</del>.
+                        </p>
+                    </div>
+                    <div class="class-card__button-ctn">
+                        <a href="./web_langs/web-langs-projects.html">Ver Projetos</a>
+                    </div>
+                </div>
+                <!-- <div class="class-card">
+                    <div class="class-card__header">
+                        <h1><span>Python</span> Language</h1>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="txt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ex
+                            perferendis distinctio error ullam. Dignissimos exercitationem hic minus voluptate tenetur
+                            sequi in. Id laboriosam eveniet rem esse facilis magnam?
+                        </p>
+                    </div>
+                    <div class="class-card__button-ctn">
+                        <a href="">Ver Projetos</a>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-card__header">
+                        <h1><span>C</span> Language</h1>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="txt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ex
+                            perferendis distinctio error ullam. Dignissimos exercitationem hic minus voluptate tenetur
+                            sequi in. Id laboriosam eveniet rem esse facilis magnam?
+                        </p>
+                    </div>
+                    <div class="class-card__button-ctn">
+                        <a href="">Ver Projetos</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="classes-ctn__dividing-line">
+            </div>
+            <div class="classes-ctn__right-side">
+                <div class="class-card">
+                    <div class="class-card__header">
+                        <h1><span>C#</span> Language</h1>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="txt">
+                            Aqui você encontrará os projetos mais profissionais que eu fiz utilizando a linguagem C#, não incluindo os feitos com o Framework ASP.NET porque estão na seção da <a href="./web_langs/web-langs-projects.html">Web</a>
+                        </p>
+                        <p class="txt">
+                            Aqui há aplicações para desktop com WPF, aplicações mobile com Xamarim Forms e programas feitos com .NET Core e projetos de sistema mais avançados. Enfim tudo o que eu explorei desta linguagem
+                        </p>
+                    </div>
+                    <div class="class-card__button-ctn">
+                        <a href="#">Ver Projetos</a>
+                    </div>
+                </div>
+                <!-- <div class="class-card">
+                    <div class="class-card__header">
+                        <h1><span>JAVA</span> Language</h1>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="txt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ex
+                            perferendis distinctio error ullam. Dignissimos exercitationem hic minus voluptate tenetur
+                            sequi in. Id laboriosam eveniet rem esse facilis magnam?
+                        </p>
+                    </div>
+                    <div class="class-card__button-ctn">
+                        <a href="">Ver Projetos</a>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-card__header">
+                        <h1><span>Game</span> Development</h1>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="txt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ex
+                            perferendis distinctio error ullam. Dignissimos exercitationem hic minus voluptate tenetur
+                            sequi in. Id laboriosam eveniet rem esse facilis magnam?
+                        </p>
+                    </div>
+                    <div class="class-card__button-ctn">
+                        <a href="">Ver Projetos</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <span class="author">Livre para uso público - Desenvolvido por <a href="">Uns0g</a></span>
+    </footer>
+    <script src="../../main.js"></script>
+</body>
+
+</html>

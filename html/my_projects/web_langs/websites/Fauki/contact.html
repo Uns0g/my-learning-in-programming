@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Página de Cadastro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="F.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!---------------------------------------------------- header ---------------------------------------------------->
+    <div class="header" style="background-color: darkgreen;">
+        <center>
+            <Div class="logo">
+                <img src="logo.png" height="120px" width="240px" alt="logo do site">
+            </Div>
+        </center>
+    </div>
+
+    <!---------------------------------------------------- navbar ---------------------------------------------------->
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: green;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Classes</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href=".\htmls/P/p.html">Peixes</a>
+                        <a class="dropdown-item" href=".\htmls/R/r.html">Répteis</a>
+                        <a class="dropdown-item" href=".\htmls/A/a.html">Aves</a>
+                        <a class="dropdown-item" href=".\htmls/M/m.html">Mamíferos</a>
+                        <a class="dropdown-item" href=".\htmls/AN/an.html">Anfíbios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bout.html">Sobre</a>
+                </li>
+            </ul>
+        <!----------------------------------------------- barra de pesquisa ----------------------------------------------->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="src.svg" width="32px"
+                        height="32px"></button>
+            </form>
+        </div>
+    </nav><br>
+<!-------------------------------------------------------------- Shadow -------------------------------------------->
+    <center><div id="shadow" class="shadow-lg p-3 mb-5 rounded" style="width: 25%;">
+        <b>Primeiro você deve se cadastrar no nosso site!</b>
+    </div></center>
+    <hr>
+
+<!----------------------------------------------------- formulário ----------------------------------------------------->
+<form>
+    <legend id="amarelin"><center> Identificação </center></legend><br>
+    <div class="row">
+        <div class="col">
+            <label for="inputEmail4">Nome</label>
+            <input type="text" class="form-control" placeholder="João">
+        </div>
+        <div class="col">
+            <label for="inputEmail4">Sobrenome</label>
+            <input type="text" class="form-control" placeholder="Ninguém">
+        </div>
+    </div>
+    <br>
+    <!------------------------------------------------------- E-mail e senha  -------------------------------------------------------->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Endereço de Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Su4_s3nH4">
+        </div>
+      </div><br>
+    <!------------------------------------------------------- Escolha de sexo  -------------------------------------------------------->
+    <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0" id="amarelin">Sexo</legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1" id="amarelin">
+                    <b>Masculino</b> 
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2" id="amarelin">
+                    <b>Feminino</b> 
+                </label>
+          </div>
+        </div>
+    </div><br>
+    <hr>
+    <br>
+    <!----------------------------------------------------------- Nascimento ------------------------------------------------------------>
+    <div class="row">
+        <legend id="amarelin"><center> Data de Nascimento </center></legend><br>
+            <div class="form-group col-md-4">
+                <label for="inputState">Dia</label>
+                <select id="inputState" class="form-control">
+                  <option selected>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Mês</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Janeiro</option>
+                  <option>Fevereiro<option>
+                  <option>Março</option>
+                  <option>Abril</option>
+                  <option>Maio</option>
+                  <option>Junho</option>
+                  <option>Julho</option>
+                  <option>Agosto</option>
+                  <option>Setembro</option>
+                  <option>Outubro</option>
+                  <option>Novembro</option>
+                  <option>Dezembro</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Ano</label>
+                <select id="inputState" class="form-control">
+                  <option>1950</option>
+                  <option>1951<option>
+                  <option>1952</option>
+                  <option>1953</option>
+                  <option>1954</option>
+                  <option>1955</option>
+                  <option>1956</option>
+                  <option>1957</option>
+                  <option>1958</option>
+                  <option>1959</option>
+                  <option>1960</option>
+                  <option>1961</option>
+                  <option>1962</option>
+                  <option>1963</option>
+                  <option>1964</option>
+                  <option>1965</option>
+                  <option>1966</option>
+                  <option>1967</option>
+                  <option>1968</option>
+                  <option>1969</option>
+                  <option>1970</option>
+                  <option>1971</option>
+                  <option>1972</option>
+                  <option>1973</option>
+                  <option>1974</option>
+                  <option>1975</option>
+                  <option>1976</option>
+                  <option>1977</option>
+                  <option>1978</option>
+                  <option>1979</option>
+                  <option>1980</option>
+                  <option>1971</option>
+                  <option>1972</option>
+                  <option>1973</option>
+                  <option>1974</option>
+                  <option>1975</option>
+                  <option>1976</option>
+                  <option>1977</option>
+                  <option>1978</option>
+                  <option>1979</option>
+                  <option>1980</option>
+                  <option>1971</option>
+                  <option>1972</option>
+                  <option>1973</option>
+                  <option>1974</option>
+                  <option>1975</option>
+                  <option>1976</option>
+                  <option>1977</option>
+                  <option>1978</option>
+                  <option>1979</option>
+                  <option>1980</option>
+                  <option>1981</option>
+                  <option>1982</option>
+                  <option>1983</option>
+                  <option>1984</option>
+                  <option selected>1985</option>
+                  <option>1986</option>
+                  <option>1987</option>
+                  <option>1988</option>
+                  <option>1989</option>
+                  <option>1990</option>
+                  <option>1991</option>
+                  <option>1992</option>
+                  <option>1993</option>
+                  <option>1994</option>
+                  <option>1995</option>
+                  <option>1996</option>
+                  <option>1997</option>
+                  <option>1998</option>
+                  <option>1999</option>
+                  <option>2000</option>
+                  <option>2001</option>
+                  <option>2002</option>
+                  <option>2003</option>
+                  <option>2004</option>
+                  <option>2005</option>
+                  <option>2006</option>
+                  <option>2007</option>
+                  <option>2008</option>
+                  <option>2009</option>
+                  <option>2010</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                </select>
+            </div>
+        </div>
+    </div><br>
+    <hr>
+    <br>
+    <!---------------------------------------------------------- Geo ---------------------------------------------------------->
+    <legend id="amarelin"><center> Registro </center></legend><br>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="inputAddress">Bairro</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Lugar Nenhum">
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="inputAddress">Endereço Completo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos bobos">
+              </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="inputAddress2">Nº:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="00">
+              </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="inputAddress2">Complemento</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento X">
+              </div>
+        </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Cidade</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+    <!---------------------------------------------------- Escolher Estado ---------------------------------------------------->
+      <div class="form-group col-md-4">
+        <label for="inputState">Estado</label>
+        <select id="inputState" class="form-control">
+          <option selected>...</option>
+          <option>Alagoas</option>
+          <option>Amapá</option>
+          <option>Amazonas</option>
+          <option>Bahia</option>
+          <option>Ceará</option>
+          <option>Distrito Federal</option>
+          <option>Espírito Santo</option>
+          <option>Goiás</option>
+          <option>Maranhão</option>
+          <option>Mato Grosso</option>
+          <option>Mato Grosso do Sul</option>
+          <option>Minas Gerais</option>
+          <option>Pará</option>
+          <option>Paraná</option>
+          <option>Paraiba</option>
+          <option>Piauí</option>
+          <option>Rio de Janeiro</option>
+          <option>Rio Grande do Norte</option>
+          <option>Rio Grande do Sul</option>
+          <option>Rondônia</option>
+          <option>Roraima</option>
+          <option>Santa Catarina</option>
+          <option>São Paulo</option>
+          <option>Sergipe</option>
+          <option>Tocantins</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">CEP</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div><br>
+<!----------------------------------------------------------- telefone ------------------------------------------------------------>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="inputCity">Telefone</label>
+                <input type="text" class="form-control" placeholder="(16) 4002-8922">
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="inputCity">Celular</label>
+                <input type="text" class="form-control" placeholder="(16) 99999-9999">
+              </div>
+        </div>
+    </div><br>
+    <hr>
+    <br>
+<!--------------------------------------------------- Cadastrar-se --------------------------------------------------->
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck" style="color: gold;">
+          Concordo com os <a href="tac.html">termos e condições</a> do site ao me cadastrar.
+        </label>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success"> Cadastrar </button>
+  </form>
+<br>
+<!----------------------------------------------- Ícones redes sociais ----------------------------------------------->
+    <hr>
+
+    <a href="https://www.youtube.com/?gl=BR&hl=PT" class="sm" target="_blank">
+        <span class="material-icons" id="special0">
+            play_circle_filled
+        </span> Acompanhe nosso canal no Youtube
+    </a>
+    <a href="https://www.facebook.com/" class="sm" target="_blank">
+        <span class="material-icons" id="special1">
+            facebook
+        </span> Curta nossa página do Facebook
+    </a>
+
+    <hr>
+
+<!--------------------------------------------------------- footer ---------------------------------------------------------->
+    <div class="footer" style="background-color: darkgreen;">
+        <div class="row">
+            <div class="col-md-5">
+                <a href="contact.html"> <span class="material-icons">
+                        contact_page
+                    </span>Entre em contato conosco</a>
+            </div>
+            <div class="col-md-6">
+                <a href="index.html"> <span class="material-icons">
+                        create
+                    </span>By Pedro Rossi</a>
+            </div>
+            <div class="col-md-1">
+                <a href="index.html"> <span class="material-icons">
+                        live_help
+                    </span>Ajuda</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: darkgoldenrod;
+    }
+
+    ul {
+        color: burlywood;
+    }
+
+    a {
+        color: burlywood;
+    }
+
+    a:hover {
+        color: yellowgreen;
+        text-decoration: underline;
+    }
+
+    #shadow {
+        background-color: yellowgreen;
+        text-decoration: initial;
+        box-shadow: green;
+        font-size: 20px;
+    }
+
+    label{
+        font-style: inherit;
+        color: yellowgreen;
+    }
+
+    #amarelin{
+        color: gold;
+    }
+
+    .sm{
+        color: gold;
+    }
+
+    #special0{
+        color: red;
+    }
+
+    #special1{
+        color: blue;
+        margin-left: 55%;
+        text-align: right;
+    }
+
+    .material-icons {
+        color: gold;
+    }
+
+    footer {
+        text-align: center;
+    }
+</style>
+
+</html>
